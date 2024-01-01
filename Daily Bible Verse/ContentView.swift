@@ -8,11 +8,12 @@
 import SwiftUI
 
 struct ContentView: View {
+
     var body: some View {
-        VStack {
-            Text("Hello, world!")
-        }
-        .padding()
+        Image("bgImage")
+            .resizable()
+            .aspectRatio(contentMode: .fill)
+            .edgesIgnoringSafeArea(.all)
     }
 }
 
