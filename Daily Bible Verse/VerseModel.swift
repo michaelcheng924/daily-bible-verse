@@ -15,7 +15,7 @@ struct Verse: Identifiable {
     var devotional: String
     var tag: Int
     
-    static var sampleVerse = Verse(verse: "Sample Verse", esvTranslation: "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.", kjvTranslation: "Sample KJV", devotional: "Sample devotional", tag: 0)
+    static var sampleVerse = Verse(verse: "Sample Verse", esvTranslation: "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.", kjvTranslation: "Sample KJV", devotional: "Sample devotional", tag: 1)
     
     static var verses = [
         Verse(
@@ -2360,6 +2360,286 @@ struct Verse: Identifiable {
             kjvTranslation: "God is in the midst of her; she shall not be moved: God shall help her, and that right early.",
             devotional: "Speaks of the stability and assistance provided by God’s presence, ensuring protection and support at the needed time.",
             tag: 328
+        ),
+        Verse(
+            verse: "Philippians 4:13",
+            esvTranslation: "I can do all things through him who strengthens me.",
+            kjvTranslation: "I can do all things through Christ which strengtheneth me.",
+            devotional: "Emphasizes the empowering presence of Christ in overcoming challenges and achieving what seems impossible on our own.",
+            tag: 329
+        ),
+        Verse(
+            verse: "Psalm 119:9",
+            esvTranslation: "How can a young man keep his way pure? By guarding it according to your word.",
+            kjvTranslation: "Wherewithal shall a young man cleanse his way? by taking heed thereto according to thy word.",
+            devotional: "Highlights the importance of adhering to God’s Word as a guide for maintaining purity and righteousness in life.",
+            tag: 330
+        ),
+        Verse(
+            verse: "Romans 12:12",
+            esvTranslation: "Rejoice in hope, be patient in tribulation, be constant in prayer.",
+            kjvTranslation: "Rejoicing in hope; patient in tribulation; continuing instant in prayer;",
+            devotional: "Encourages a positive, hope-filled attitude during difficult times and underscores the importance of persistent prayer.",
+            tag: 331
+        ),
+        Verse(
+            verse: "James 1:17",
+            esvTranslation: "Every good gift and every perfect gift is from above, coming down from the Father of lights with whom there is no variation or shadow due to change.",
+            kjvTranslation: "Every good gift and every perfect gift is from above, and cometh down from the Father of lights, with whom is no variableness, neither shadow of turning.",
+            devotional: "Reminds us that all blessings and good things in our lives are gifts from God, who is consistently good and unchanging.",
+            tag: 332
+        ),
+        Verse(
+            verse: "1 Corinthians 13:2",
+            esvTranslation: "And if I have prophetic powers, and understand all mysteries and all knowledge, and if I have all faith, so as to remove mountains, but have not love, I am nothing.",
+            kjvTranslation: "And though I have the gift of prophecy, and understand all mysteries, and all knowledge; and though I have all faith, so that I could remove mountains, and have not charity, I am nothing.",
+            devotional: "Teaches that love is the most essential quality, surpassing even the most impressive spiritual gifts or achievements.",
+            tag: 333
+        ),
+        Verse(
+            verse: "Psalm 150:6",
+            esvTranslation: "Let everything that has breath praise the Lord! Praise the Lord!",
+            kjvTranslation: "Let every thing that hath breath praise the Lord. Praise ye the Lord.",
+            devotional: "A call to all living beings to worship and praise God, recognizing His sovereignty and goodness.",
+            tag: 334
+        ),
+        Verse(
+            verse: "Matthew 5:6",
+            esvTranslation: "Blessed are those who hunger and thirst for righteousness, for they shall be satisfied.",
+            kjvTranslation: "Blessed are they which do hunger and thirst after righteousness: for they shall be filled.",
+            devotional: "Assures that those who earnestly seek righteousness and a deeper relationship with God will find fulfillment.",
+            tag: 335
+        ),
+        Verse(
+            verse: "2 Corinthians 12:9",
+            esvTranslation: "But he said to me, ‘My grace is sufficient for you, for my power is made perfect in weakness.’ Therefore I will boast all the more gladly of my weaknesses, so that the power of Christ may rest upon me.",
+            kjvTranslation: "And he said unto me, My grace is sufficient for thee: for my strength is made perfect in weakness. Most gladly therefore will I rather glory in my infirmities, that the power of Christ may rest upon me.",
+            devotional: "Highlights the paradox of Christian strength in weakness, where God’s grace and power shine through human limitations.",
+            tag: 336
+        ),
+        Verse(
+            verse: "Hebrews 4:12",
+            esvTranslation: "For the word of God is living and active, sharper than any two-edged sword, piercing to the division of soul and of spirit, joints and marrow, and discerning the thoughts and intentions of the heart.",
+            kjvTranslation: "For the word of God is quick, and powerful, and sharper than any twoedged sword, piercing even to the dividing asunder of soul and spirit, and of the joints and marrow, and is a discerner of the thoughts and intents of the heart.",
+            devotional: "Emphasizes the dynamic and powerful nature of God's Word in affecting and discerning our innermost being.",
+            tag: 337
+        ),
+        Verse(
+            verse: "1 John 3:18",
+            esvTranslation: "Little children, let us not love in word or talk but in deed and in truth.",
+            kjvTranslation: "My little children, let us not love in word, neither in tongue; but in deed and in truth.",
+            devotional: "Urges believers to express love through genuine actions and truth, not merely in words or speech.",
+            tag: 338
+        ),
+        Verse(
+            verse: "Psalm 121:1-2",
+            esvTranslation: "I lift up my eyes to the hills. From where does my help come? My help comes from the Lord, who made heaven and earth.",
+            kjvTranslation: "I will lift up mine eyes unto the hills, from whence cometh my help. My help cometh from the Lord, which made heaven and earth.",
+            devotional: "Expresses a confident assurance in God as the ultimate source of help and creator of all.",
+            tag: 339
+        ),
+        Verse(
+            verse: "Philippians 1:21",
+            esvTranslation: "For to me to live is Christ, and to die is gain.",
+            kjvTranslation: "For to me to live is Christ, and to die is gain.",
+            devotional: "Reflects the profound commitment of the apostle Paul to live for Christ, valuing eternal life with Christ above all else.",
+            tag: 340
+        ),
+        Verse(
+            verse: "Proverbs 18:24",
+            esvTranslation: "A man of many companions may come to ruin, but there is a friend who sticks closer than a brother.",
+            kjvTranslation: "A man that hath friends must shew himself friendly: and there is a friend that sticketh closer than a brother.",
+            devotional: "Points to the value of true friendship, which is deeper and more reliable than mere acquaintances.",
+            tag: 341
+        ),
+        Verse(
+            verse: "2 Timothy 2:15",
+            esvTranslation: "Do your best to present yourself to God as one approved, a worker who has no need to be ashamed, rightly handling the word of truth.",
+            kjvTranslation: "Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth.",
+            devotional: "Encourages diligent study and accurate understanding of God’s Word for God’s approval and effective ministry.",
+            tag: 342
+        ),
+        Verse(
+            verse: "Matthew 7:12",
+            esvTranslation: "So whatever you wish that others would do to you, do also to them, for this is the Law and the Prophets.",
+            kjvTranslation: "Therefore all things whatsoever ye would that men should do to you, do ye even so to them: for this is the law and the prophets.",
+            devotional: "Expresses the 'Golden Rule,' a foundational ethical principle of treating others as one wishes to be treated.",
+            tag: 343
+        ),
+        Verse(
+            verse: "Psalm 139:14",
+            esvTranslation: "I praise you, for I am fearfully and wonderfully made. Wonderful are your works; my soul knows it very well.",
+            kjvTranslation: "I will praise thee; for I am fearfully and wonderfully made: marvellous are thy works; and that my soul knoweth right well.",
+            devotional: "A proclamation of awe and gratitude for God’s incredible work in creating each person uniquely and wonderfully.",
+            tag: 344
+        ),
+        Verse(
+            verse: "Romans 12:12",
+            esvTranslation: "Rejoice in hope, be patient in tribulation, be constant in prayer.",
+            kjvTranslation: "Rejoicing in hope; patient in tribulation; continuing instant in prayer;",
+            devotional: "Encourages a steadfast, hopeful attitude in life's challenges, emphasizing the importance of patience and persistent prayer.",
+            tag: 345
+        ),
+        Verse(
+            verse: "Isaiah 41:13",
+            esvTranslation: "For I, the Lord your God, hold your right hand; it is I who say to you, ‘Fear not, I am the one who helps you.’",
+            kjvTranslation: "For I the Lord thy God will hold thy right hand, saying unto thee, Fear not; I will help thee.",
+            devotional: "Offers a comforting assurance of God's presence and support, symbolizing His guidance and protection.",
+            tag: 346
+        ),
+        Verse(
+            verse: "James 3:17",
+            esvTranslation: "But the wisdom from above is first pure, then peaceable, gentle, open to reason, full of mercy and good fruits, impartial and sincere.",
+            kjvTranslation: "But the wisdom that is from above is first pure, then peaceable, gentle, and easy to be intreated, full of mercy and good fruits, without partiality, and without hypocrisy.",
+            devotional: "Describes the characteristics of divine wisdom, contrasting it with worldly wisdom, and highlighting its purity and peaceful nature.",
+            tag: 347
+        ),
+        Verse(
+            verse: "Psalm 16:8",
+            esvTranslation: "I have set the Lord always before me; because he is at my right hand, I shall not be shaken.",
+            kjvTranslation: "I have set the Lord always before me: because he is at my right hand, I shall not be moved.",
+            devotional: "Expresses a strong conviction in God's constant presence and support, providing a foundation of stability and confidence.",
+            tag: 348
+        ),
+        Verse(
+            verse: "Ephesians 2:10",
+            esvTranslation: "For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.",
+            kjvTranslation: "For we are his workmanship, created in Christ Jesus unto good works, which God hath before ordained that we should walk in them.",
+            devotional: "Highlights the purpose and destiny of believers, emphasizing that we are crafted by God to fulfill the good works He has planned.",
+            tag: 349
+        ),
+        Verse(
+            verse: "Proverbs 27:1",
+            esvTranslation: "Do not boast about tomorrow, for you do not know what a day may bring.",
+            kjvTranslation: "Boast not thyself of tomorrow; for thou knowest not what a day may bring forth.",
+            devotional: "Advises humility and mindfulness about the uncertainty of the future, encouraging reliance on God rather than personal presumptions.",
+            tag: 350
+        ),
+        Verse(
+            verse: "1 Peter 4:8",
+            esvTranslation: "Above all, keep loving one another earnestly, since love covers a multitude of sins.",
+            kjvTranslation: "And above all things have fervent charity among yourselves: for charity shall cover the multitude of sins.",
+            devotional: "Emphasizes the paramount importance of love within the Christian community, noting its power to heal and forgive.",
+            tag: 351
+        ),
+        Verse(
+            verse: "Philippians 3:14",
+            esvTranslation: "I press on toward the goal for the prize of the upward call of God in Christ Jesus.",
+            kjvTranslation: "I press toward the mark for the prize of the high calling of God in Christ Jesus.",
+            devotional: "Paul's personal statement of determination and focus on the spiritual goal set before him, emphasizing a forward-looking faith.",
+            tag: 352
+        ),
+        Verse(
+            verse: "2 Timothy 2:15",
+            esvTranslation: "Do your best to present yourself to God as one approved, a worker who has no need to be ashamed, rightly handling the word of truth.",
+            kjvTranslation: "Study to shew thyself approved unto God, a workman that needeth not to be ashamed, rightly dividing the word of truth.",
+            devotional: "Encourages diligent study and accurate understanding of Scripture as a means of gaining God's approval and avoiding shame.",
+            tag: 353
+        ),
+        Verse(
+            verse: "Psalm 37:4",
+            esvTranslation: "Delight yourself in the Lord, and he will give you the desires of your heart.",
+            kjvTranslation: "Delight thyself also in the Lord; and he shall give thee the desires of thine heart.",
+            devotional: "Promises that when our joy is centered in God, He will align our desires with His will and fulfill them.",
+            tag: 354
+        ),
+        Verse(
+            verse: "James 1:17",
+            esvTranslation: "Every good gift and every perfect gift is from above, coming down from the Father of lights, with whom there is no variation or shadow due to change.",
+            kjvTranslation: "Every good gift and every perfect gift is from above, and cometh down from the Father of lights, with whom is no variableness, neither shadow of turning.",
+            devotional: "Affirms that all blessings come from God, who is unchanging and consistently good in His nature.",
+            tag: 355
+        ),
+        Verse(
+            verse: "Proverbs 3:3-4",
+            esvTranslation: "Let not steadfast love and faithfulness forsake you; bind them around your neck; write them on the tablet of your heart. So you will find favor and good success in the sight of God and man.",
+            kjvTranslation: "Let not mercy and truth forsake thee: bind them about thy neck; write them upon the table of thine heart: So shalt thou find favour and good understanding in the sight of God and man.",
+            devotional: "Encourages the embracing and internalizing of love and faithfulness as essential virtues for gaining favor with both God and people.",
+            tag: 356
+        ),
+        Verse(
+            verse: "Ephesians 4:26-27",
+            esvTranslation: "Be angry and do not sin; do not let the sun go down on your anger, and give no opportunity to the devil.",
+            kjvTranslation: "Be ye angry, and sin not: let not the sun go down upon your wrath: Neither give place to the devil.",
+            devotional: "Acknowledges the emotion of anger but warns against sinning in anger and advises resolving conflicts quickly to prevent spiritual harm.",
+            tag: 357
+        ),
+        Verse(
+            verse: "1 Corinthians 13:1",
+            esvTranslation: "If I speak in the tongues of men and of angels, but have not love, I am a noisy gong or a clanging cymbal.",
+            kjvTranslation: "Though I speak with the tongues of men and of angels, and have not charity, I am become as sounding brass, or a tinkling cymbal.",
+            devotional: "Highlights the supreme importance of love over other spiritual gifts or abilities, indicating that without love, all else is empty.",
+            tag: 358
+        ),
+        Verse(
+            verse: "Psalm 34:10",
+            esvTranslation: "The young lions suffer want and hunger; but those who seek the Lord lack no good thing.",
+            kjvTranslation: "The young lions do lack, and suffer hunger: but they that seek the Lord shall not want any good thing.",
+            devotional: "Assures that those who earnestly seek God will have their needs met, contrasting with even the strongest creatures who may still experience lack.",
+            tag: 359
+        ),
+        Verse(
+            verse: "Hebrews 4:16",
+            esvTranslation: "Let us then with confidence draw near to the throne of grace, that we may receive mercy and find grace to help in time of need.",
+            kjvTranslation: "Let us therefore come boldly unto the throne of grace, that we may obtain mercy, and find grace to help in time of need.",
+            devotional: "Encourages believers to approach God's presence confidently, assuring that we will find mercy and grace from Him.",
+            tag: 360
+        ),
+        Verse(
+            verse: "Isaiah 41:13",
+            esvTranslation: "For I, the Lord your God, hold your right hand; it is I who say to you, ‘Fear not, I am the one who helps you.’",
+            kjvTranslation: "For I the Lord thy God will hold thy right hand, saying unto thee, Fear not; I will help thee.",
+            devotional: "God reassures us of His personal support and assistance, encouraging us not to fear but to trust in His help.",
+            tag: 361
+        ),
+        Verse(
+            verse: "Proverbs 18:24",
+            esvTranslation: "A man of many companions may come to ruin, but there is a friend who sticks closer than a brother.",
+            kjvTranslation: "A man that hath friends must shew himself friendly: and there is a friend that sticketh closer than a brother.",
+            devotional: "Acknowledges the value of true friendship, suggesting that the deepest bonds of companionship can surpass even familial relationships.",
+            tag: 362
+        ),
+        Verse(
+            verse: "Philippians 3:13-14",
+            esvTranslation: "Brothers, I do not consider that I have made it my own. But one thing I do: forgetting what lies behind and straining forward to what lies ahead, I press on toward the goal for the prize of the upward call of God in Christ Jesus.",
+            kjvTranslation: "Brethren, I count not myself to have apprehended: but this one thing I do, forgetting those things which are behind, and reaching forth unto those things which are before, I press toward the mark for the prize of the high calling of God in Christ Jesus.",
+            devotional: "Encourages a forward-looking perspective in our spiritual journey, focusing on growth and progress towards our ultimate goal in Christ.",
+            tag: 363
+        ),
+        Verse(
+            verse: "Psalm 16:8",
+            esvTranslation: "I have set the Lord always before me; because he is at my right hand, I shall not be shaken.",
+            kjvTranslation: "I have set the Lord always before me: because he is at my right hand, I shall not be moved.",
+            devotional: "Expresses a steadfast faith in God’s constant presence, providing stability and confidence in life’s uncertainties.",
+            tag: 364
+        ),
+        Verse(
+            verse: "James 3:17",
+            esvTranslation: "But the wisdom from above is first pure, then peaceable, gentle, open to reason, full of mercy and good fruits, impartial and sincere.",
+            kjvTranslation: "But the wisdom that is from above is first pure, then peaceable, gentle, and easy to be intreated, full of mercy and good fruits, without partiality, and without hypocrisy.",
+            devotional: "Describes the qualities of divine wisdom, contrasting it with earthly wisdom, highlighting its purity and benevolence.",
+            tag: 365
+        ),
+        Verse(
+            verse: "Romans 12:12",
+            esvTranslation: "Rejoice in hope, be patient in tribulation, be constant in prayer.",
+            kjvTranslation: "Rejoicing in hope; patient in tribulation; continuing instant in prayer;",
+            devotional: "Advises a balanced approach to the Christian life, encompassing joy in hope, patience in hardship, and dedication to prayer.",
+            tag: 366
+        ),
+        Verse(
+            verse: "Proverbs 31:25",
+            esvTranslation: "Strength and dignity are her clothing, and she laughs at the time to come.",
+            kjvTranslation: "Strength and honour are her clothing; and she shall rejoice in time to come.",
+            devotional: "Praises the virtuous woman for her inner strength and dignity, characterizing her as fearless about the future.",
+            tag: 367
+        ),
+        Verse(
+            verse: "1 Peter 2:9",
+            esvTranslation: "But you are a chosen race, a royal priesthood, a holy nation, a people for his own possession, that you may proclaim the excellencies of him who called you out of darkness into his marvelous light.",
+            kjvTranslation: "But ye are a chosen generation, a royal priesthood, an holy nation, a peculiar people; that ye should shew forth the praises of him who hath called you out of darkness into his marvellous light;",
+            devotional: "Highlights the identity and purpose of believers as God’s chosen people, called to declare His greatness in the world.",
+            tag: 368
         )
         
     ]
