@@ -9,6 +9,8 @@ import SwiftUI
 
 @main
 struct Daily_Bible_VerseApp: App {
+    @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
+    
     var body: some Scene {
         WindowGroup {
             ContentView()

@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		8ED8902B2B43A4A300069879 /* VerseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8902A2B43A4A300069879 /* VerseModel.swift */; };
 		8ED8902D2B43C85D00069879 /* VerseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8902C2B43C85D00069879 /* VerseView.swift */; };
+		8ED890302B44777300069879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8902F2B44777300069879 /* AppDelegate.swift */; };
 		ECB3D1F82B43808A003C2E91 /* Daily_Bible_VerseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3D1F72B43808A003C2E91 /* Daily_Bible_VerseApp.swift */; };
 		ECB3D1FA2B43808A003C2E91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3D1F92B43808A003C2E91 /* ContentView.swift */; };
 		ECB3D1FC2B43808B003C2E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB3D1FB2B43808B003C2E91 /* Assets.xcassets */; };
@@ -38,6 +39,8 @@
 /* Begin PBXFileReference section */
 		8ED8902A2B43A4A300069879 /* VerseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseModel.swift; sourceTree = "<group>"; };
 		8ED8902C2B43C85D00069879 /* VerseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseView.swift; sourceTree = "<group>"; };
+		8ED8902E2B4473E200069879 /* Daily Bible Verse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Daily Bible Verse.entitlements"; sourceTree = "<group>"; };
+		8ED8902F2B44777300069879 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ECB3D1F42B43808A003C2E91 /* Daily Bible Verse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Bible Verse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB3D1F72B43808A003C2E91 /* Daily_Bible_VerseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Bible_VerseApp.swift; sourceTree = "<group>"; };
 		ECB3D1F92B43808A003C2E91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,9 +101,11 @@
 		ECB3D1F62B43808A003C2E91 /* Daily Bible Verse */ = {
 			isa = PBXGroup;
 			children = (
+				8ED8902E2B4473E200069879 /* Daily Bible Verse.entitlements */,
 				ECB3D1F72B43808A003C2E91 /* Daily_Bible_VerseApp.swift */,
 				ECB3D1F92B43808A003C2E91 /* ContentView.swift */,
 				8ED8902A2B43A4A300069879 /* VerseModel.swift */,
+				8ED8902F2B44777300069879 /* AppDelegate.swift */,
 				8ED8902C2B43C85D00069879 /* VerseView.swift */,
 				ECB3D1FB2B43808B003C2E91 /* Assets.xcassets */,
 				ECB3D1FD2B43808B003C2E91 /* Preview Content */,
@@ -266,6 +271,7 @@
 				ECB3D1FA2B43808A003C2E91 /* ContentView.swift in Sources */,
 				8ED8902B2B43A4A300069879 /* VerseModel.swift in Sources */,
 				8ED8902D2B43C85D00069879 /* VerseView.swift in Sources */,
+				8ED890302B44777300069879 /* AppDelegate.swift in Sources */,
 				ECB3D1F82B43808A003C2E91 /* Daily_Bible_VerseApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -422,6 +428,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Daily Bible Verse/Daily Bible Verse.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Daily Bible Verse/Preview Content\"";
@@ -451,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Daily Bible Verse/Daily Bible Verse.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Daily Bible Verse/Preview Content\"";

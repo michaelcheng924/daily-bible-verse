@@ -10,7 +10,7 @@ import SwiftUI
 struct VerseView: View {
     var verse: Verse
     
-    var imageNames = ["fallLeavesBg", "lightTreesBg"]
+    var imageNames = ["fallLeavesBg", "lightTreesBg", "waterSunBg"]
     
     var imageIndex: Int {
         return verse.tag % imageNames.count
