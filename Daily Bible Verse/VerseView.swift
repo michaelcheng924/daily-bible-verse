@@ -10,10 +10,16 @@ import SwiftUI
 struct VerseView: View {
     var verse: Verse
     
+    var imageNames = ["fallLeavesBg", "lightTreesBg"]
+    
+    var imageIndex: Int {
+        return verse.tag % imageNames.count
+    }
+    
     var body: some View {
         GeometryReader { geometry in
             ZStack{
-                Image("fallLeavesBg")
+                Image(imageNames[imageIndex])
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)

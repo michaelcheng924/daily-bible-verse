@@ -1688,6 +1688,118 @@ struct Verse: Identifiable {
             kjvTranslation: "But without faith it is impossible to please him: for he that cometh to God must believe that he is, and that he is a rewarder of them that diligently seek him.",
             devotional: "Emphasizes the centrality of faith in a relationship with God, including belief in His existence and trust in His faithfulness.",
             tag: 232
+        ),
+        Verse(
+            verse: "Philippians 1:21",
+            esvTranslation: "For to me, to live is Christ, and to die is gain.",
+            kjvTranslation: "For to me to live is Christ, and to die is gain.",
+            devotional: "Expresses the profound conviction that life in Christ is the most valuable pursuit, and even death is a gain, leading to eternal presence with Him.",
+            tag: 233
+        ),
+        Verse(
+            verse: "Psalm 121:1-2",
+            esvTranslation: "I lift up my eyes to the hills. From where does my help come? My help comes from the Lord, who made heaven and earth.",
+            kjvTranslation: "I will lift up mine eyes unto the hills, from whence cometh my help. My help cometh from the Lord, which made heaven and earth.",
+            devotional: "A declaration of faith and dependence on God, recognizing Him as the ultimate source of help and creator of all.",
+            tag: 234
+        ),
+        Verse(
+            verse: "Matthew 6:21",
+            esvTranslation: "For where your treasure is, there your heart will be also.",
+            kjvTranslation: "For where your treasure is, there will your heart be also.",
+            devotional: "Emphasizes the connection between what we value most and what occupies our heart, guiding our actions and priorities.",
+            tag: 235
+        ),
+        Verse(
+            verse: "Psalm 150:6",
+            esvTranslation: "Let everything that has breath praise the Lord! Praise the Lord!",
+            kjvTranslation: "Let every thing that hath breath praise the Lord. Praise ye the Lord.",
+            devotional: "A call to all living beings to praise God, celebrating His greatness and the life He has given.",
+            tag: 236
+        ),
+        Verse(
+            verse: "1 Corinthians 15:58",
+            esvTranslation: "Therefore, my beloved brothers, be steadfast, immovable, always abounding in the work of the Lord, knowing that in the Lord your labor is not in vain.",
+            kjvTranslation: "Therefore, my beloved brethren, be ye stedfast, unmoveable, always abounding in the work of the Lord, forasmuch as ye know that your labour is not in vain in the Lord.",
+            devotional: "Encourages perseverance in Christian service, with the assurance that efforts made for the Lord have eternal significance.",
+            tag: 237
+        ),
+        Verse(
+            verse: "Proverbs 14:29",
+            esvTranslation: "Whoever is slow to anger has great understanding, but he who has a hasty temper exalts folly.",
+            kjvTranslation: "He that is slow to wrath is of great understanding: but he that is hasty of spirit exalteth folly.",
+            devotional: "Highlights the wisdom of patience and self-control, contrasting it with the foolishness of quick-tempered reactions.",
+            tag: 238
+        ),
+        Verse(
+            verse: "Ephesians 2:10",
+            esvTranslation: "For we are his workmanship, created in Christ Jesus for good works, which God prepared beforehand, that we should walk in them.",
+            kjvTranslation: "For we are his workmanship, created in Christ Jesus unto good works, which God hath before ordained that we should walk in them.",
+            devotional: "Reminds us that we are purposefully made by God to engage in good deeds, planned by Him as part of our Christian walk.",
+            tag: 239
+        ),
+        Verse(
+            verse: "Isaiah 12:2",
+            esvTranslation: "Behold, God is my salvation; I will trust, and will not be afraid; for the Lord God is my strength and my song, and he has become my salvation.",
+            kjvTranslation: "Behold, God is my salvation; I will trust, and not be afraid: for the Lord Jehovah is my strength and my song; he also is become my salvation.",
+            devotional: "Expresses a deep sense of security and joy in God's salvation, leading to trust and fearlessness in life's journey.",
+            tag: 240
+        ),
+        Verse(
+            verse: "James 3:17",
+            esvTranslation: "But the wisdom that comes from above is first pure, then peaceable, gentle, open to reason, full of mercy and good fruits, impartial and sincere.",
+            kjvTranslation: "But the wisdom that is from above is first pure, then peaceable, gentle, and easy to be intreated, full of mercy and good fruits, without partiality, and without hypocrisy.",
+            devotional: "Describes the characteristics of divine wisdom, highlighting its purity, peacefulness, and sincerity, in contrast to earthly wisdom.",
+            tag: 241
+        ),
+        Verse(
+            verse: "Romans 12:12",
+            esvTranslation: "Rejoice in hope, be patient in tribulation, be constant in prayer.",
+            kjvTranslation: "Rejoicing in hope; patient in tribulation; continuing instant in prayer;",
+            devotional: "Advises believers to maintain joy and hope, endure trials with patience, and persist in prayer, reflecting a faithful Christian life.",
+            tag: 242
+        ),
+        Verse(
+            verse: "Psalm 119:9",
+            esvTranslation: "How can a young man keep his way pure? By guarding it according to your word.",
+            kjvTranslation: "Wherewithal shall a young man cleanse his way? by taking heed thereto according to thy word.",
+            devotional: "Emphasizes the importance of adhering to God's Word as a guide for maintaining purity and righteousness in life.",
+            tag: 243
+        ),
+        Verse(
+            verse: "Hebrews 4:12",
+            esvTranslation: "For the word of God is living and active, sharper than any two-edged sword, piercing to the division of soul and of spirit, of joints and of marrow, and discerning the thoughts and intentions of the heart.",
+            kjvTranslation: "For the word of God is quick, and powerful, and sharper than any twoedged sword, piercing even to the dividing asunder of soul and spirit, and of the joints and marrow, and is a discerner of the thoughts and intents of the heart.",
+            devotional: "Highlights the power of God’s Word to penetrate deeply into our being, revealing our innermost thoughts and motives.",
+            tag: 244
+        ),
+        Verse(
+            verse: "Philippians 2:13",
+            esvTranslation: "For it is God who works in you, both to will and to work for his good pleasure.",
+            kjvTranslation: "For it is God which worketh in you both to will and to do of his good pleasure.",
+            devotional: "Acknowledges that our desire and ability to do good come from God, who works within us to fulfill His purposes.",
+            tag: 245
+        ),
+        Verse(
+            verse: "Psalm 145:9",
+            esvTranslation: "The Lord is good to all, and his mercy is over all that he has made.",
+            kjvTranslation: "The Lord is good to all: and his tender mercies are over all his works.",
+            devotional: "Celebrates God's goodness and mercy, recognizing His kindness and compassion towards all of His creation.",
+            tag: 246
+        ),
+        Verse(
+            verse: "John 13:34",
+            esvTranslation: "A new commandment I give to you, that you love one another: just as I have loved you, you also are to love one another.",
+            kjvTranslation: "A new commandment I give unto you, That ye love one another; as I have loved you, that ye also love one another.",
+            devotional: "Jesus' directive for His followers to love each other, setting His own sacrificial love as the benchmark for our relationships.",
+            tag: 247
+        ),
+        Verse(
+            verse: "Proverbs 18:24",
+            esvTranslation: "A man of many companions may come to ruin, but there is a friend who sticks closer than a brother.",
+            kjvTranslation: "A man that hath friends must shew himself friendly: and there is a friend that sticketh closer than a brother.",
+            devotional: "Reflects on the value of deep, loyal friendships, which can be even more steadfast than familial bonds.",
+            tag: 248
         )
         
     ]
