@@ -8,29 +8,23 @@
 import SwiftUI
 
 struct ContentView: View {
-    var bibleVerses = ["BV 1", "BV 2"]
+    @State private var verseIndex = 0
+    private let verses = Verse.verses
+    
+    
 
     var body: some View {
-        TabView(selection:.constant(0)) {
-            ForEach(0..<bibleVerses.count) { index in
-                ZStack {
-                    Image("bgImage")
-                        .resizable()
-                        .aspectRatio(contentMode: .fill)
-                        .edgesIgnoringSafeArea(.all)
-                    
-                    Text(bibleVerses[index])
-                        .foregroundColor(.white)
-                        .font(.largeTitle)
-                        .padding(.top, -100)
-                        .padding(.horizontal, 20)
-                        .frame(width: 300, alignment: .leading)
-                        .multilineTextAlignment(.center)
-                }
-                .tag(index)
+        TabView(selection: $verseIndex) {
+            ForEach(verses) { verse in
+                VerseView(verse: verse)
+                    .tag(verse.tag)
             }
         }
         .tabViewStyle(PageTabViewStyle())
+    }
+    
+    func incrementPage() {
+        verseIndex += 1
     }
 }
 
