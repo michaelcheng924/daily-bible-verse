@@ -47,14 +47,14 @@
 		8ED890312B4490AD00069879 /* OptionsDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsDialogView.swift; sourceTree = "<group>"; };
 		8ED890332B44B80F00069879 /* Daily-Bible-Verse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Daily-Bible-Verse-Info.plist"; sourceTree = "<group>"; };
 		8ED890372B44C2B500069879 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
-		ECB3D1F42B43808A003C2E91 /* Daily Bible Verse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Bible Verse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB3D1F42B43808A003C2E91 /* Bible Verse of the Day (FREE).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bible Verse of the Day (FREE).app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB3D1F72B43808A003C2E91 /* Daily_Bible_VerseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Bible_VerseApp.swift; sourceTree = "<group>"; };
 		ECB3D1F92B43808A003C2E91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		ECB3D1FB2B43808B003C2E91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ECB3D1FE2B43808B003C2E91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		ECB3D2042B43808C003C2E91 /* Daily Bible VerseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily Bible VerseTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB3D2042B43808C003C2E91 /* Bible Verse of the Day (FREE)Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bible Verse of the Day (FREE)Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB3D2082B43808C003C2E91 /* Daily_Bible_VerseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Bible_VerseTests.swift; sourceTree = "<group>"; };
-		ECB3D20E2B43808C003C2E91 /* Daily Bible VerseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Daily Bible VerseUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECB3D20E2B43808C003C2E91 /* Bible Verse of the Day (FREE)UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bible Verse of the Day (FREE)UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB3D2122B43808C003C2E91 /* Daily_Bible_VerseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Bible_VerseUITests.swift; sourceTree = "<group>"; };
 		ECB3D2142B43808C003C2E91 /* Daily_Bible_VerseUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Bible_VerseUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -97,9 +97,9 @@
 		ECB3D1F52B43808A003C2E91 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				ECB3D1F42B43808A003C2E91 /* Daily Bible Verse.app */,
-				ECB3D2042B43808C003C2E91 /* Daily Bible VerseTests.xctest */,
-				ECB3D20E2B43808C003C2E91 /* Daily Bible VerseUITests.xctest */,
+				ECB3D1F42B43808A003C2E91 /* Bible Verse of the Day (FREE).app */,
+				ECB3D2042B43808C003C2E91 /* Bible Verse of the Day (FREE)Tests.xctest */,
+				ECB3D20E2B43808C003C2E91 /* Bible Verse of the Day (FREE)UITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -150,9 +150,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		ECB3D1F32B43808A003C2E91 /* Daily Bible Verse */ = {
+		ECB3D1F32B43808A003C2E91 /* Bible Verse of the Day (FREE) */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECB3D2182B43808C003C2E91 /* Build configuration list for PBXNativeTarget "Daily Bible Verse" */;
+			buildConfigurationList = ECB3D2182B43808C003C2E91 /* Build configuration list for PBXNativeTarget "Bible Verse of the Day (FREE)" */;
 			buildPhases = (
 				ECB3D1F02B43808A003C2E91 /* Sources */,
 				ECB3D1F12B43808A003C2E91 /* Frameworks */,
@@ -162,14 +162,14 @@
 			);
 			dependencies = (
 			);
-			name = "Daily Bible Verse";
+			name = "Bible Verse of the Day (FREE)";
 			productName = "Daily Bible Verse";
-			productReference = ECB3D1F42B43808A003C2E91 /* Daily Bible Verse.app */;
+			productReference = ECB3D1F42B43808A003C2E91 /* Bible Verse of the Day (FREE).app */;
 			productType = "com.apple.product-type.application";
 		};
-		ECB3D2032B43808C003C2E91 /* Daily Bible VerseTests */ = {
+		ECB3D2032B43808C003C2E91 /* Bible Verse of the Day (FREE)Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECB3D21B2B43808C003C2E91 /* Build configuration list for PBXNativeTarget "Daily Bible VerseTests" */;
+			buildConfigurationList = ECB3D21B2B43808C003C2E91 /* Build configuration list for PBXNativeTarget "Bible Verse of the Day (FREE)Tests" */;
 			buildPhases = (
 				ECB3D2002B43808C003C2E91 /* Sources */,
 				ECB3D2012B43808C003C2E91 /* Frameworks */,
@@ -180,14 +180,14 @@
 			dependencies = (
 				ECB3D2062B43808C003C2E91 /* PBXTargetDependency */,
 			);
-			name = "Daily Bible VerseTests";
+			name = "Bible Verse of the Day (FREE)Tests";
 			productName = "Daily Bible VerseTests";
-			productReference = ECB3D2042B43808C003C2E91 /* Daily Bible VerseTests.xctest */;
+			productReference = ECB3D2042B43808C003C2E91 /* Bible Verse of the Day (FREE)Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		ECB3D20D2B43808C003C2E91 /* Daily Bible VerseUITests */ = {
+		ECB3D20D2B43808C003C2E91 /* Bible Verse of the Day (FREE)UITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ECB3D21E2B43808C003C2E91 /* Build configuration list for PBXNativeTarget "Daily Bible VerseUITests" */;
+			buildConfigurationList = ECB3D21E2B43808C003C2E91 /* Build configuration list for PBXNativeTarget "Bible Verse of the Day (FREE)UITests" */;
 			buildPhases = (
 				ECB3D20A2B43808C003C2E91 /* Sources */,
 				ECB3D20B2B43808C003C2E91 /* Frameworks */,
@@ -198,9 +198,9 @@
 			dependencies = (
 				ECB3D2102B43808C003C2E91 /* PBXTargetDependency */,
 			);
-			name = "Daily Bible VerseUITests";
+			name = "Bible Verse of the Day (FREE)UITests";
 			productName = "Daily Bible VerseUITests";
-			productReference = ECB3D20E2B43808C003C2E91 /* Daily Bible VerseUITests.xctest */;
+			productReference = ECB3D20E2B43808C003C2E91 /* Bible Verse of the Day (FREE)UITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -226,7 +226,7 @@
 					};
 				};
 			};
-			buildConfigurationList = ECB3D1EF2B43808A003C2E91 /* Build configuration list for PBXProject "Daily Bible Verse" */;
+			buildConfigurationList = ECB3D1EF2B43808A003C2E91 /* Build configuration list for PBXProject "Bible Verse of the Day (FREE)" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -239,9 +239,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				ECB3D1F32B43808A003C2E91 /* Daily Bible Verse */,
-				ECB3D2032B43808C003C2E91 /* Daily Bible VerseTests */,
-				ECB3D20D2B43808C003C2E91 /* Daily Bible VerseUITests */,
+				ECB3D1F32B43808A003C2E91 /* Bible Verse of the Day (FREE) */,
+				ECB3D2032B43808C003C2E91 /* Bible Verse of the Day (FREE)Tests */,
+				ECB3D20D2B43808C003C2E91 /* Bible Verse of the Day (FREE)UITests */,
 			);
 		};
 /* End PBXProject section */
@@ -310,12 +310,12 @@
 /* Begin PBXTargetDependency section */
 		ECB3D2062B43808C003C2E91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ECB3D1F32B43808A003C2E91 /* Daily Bible Verse */;
+			target = ECB3D1F32B43808A003C2E91 /* Bible Verse of the Day (FREE) */;
 			targetProxy = ECB3D2052B43808C003C2E91 /* PBXContainerItemProxy */;
 		};
 		ECB3D2102B43808C003C2E91 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = ECB3D1F32B43808A003C2E91 /* Daily Bible Verse */;
+			target = ECB3D1F32B43808A003C2E91 /* Bible Verse of the Day (FREE) */;
 			targetProxy = ECB3D20F2B43808C003C2E91 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -460,7 +460,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.joyfulexile.Daily-Bible-Verse";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joyfulexile.bible-verse-day-free";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -493,7 +493,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.joyfulexile.Daily-Bible-Verse";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joyfulexile.bible-verse-day-free";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -517,7 +517,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daily Bible Verse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Daily Bible Verse";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bible Verse of the Day (FREE).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bible Verse of the Day (FREE)";
 			};
 			name = Debug;
 		};
@@ -537,7 +537,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Daily Bible Verse.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Daily Bible Verse";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bible Verse of the Day (FREE).app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Bible Verse of the Day (FREE)";
 			};
 			name = Release;
 		};
@@ -580,7 +580,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		ECB3D1EF2B43808A003C2E91 /* Build configuration list for PBXProject "Daily Bible Verse" */ = {
+		ECB3D1EF2B43808A003C2E91 /* Build configuration list for PBXProject "Bible Verse of the Day (FREE)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECB3D2162B43808C003C2E91 /* Debug */,
@@ -589,7 +589,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECB3D2182B43808C003C2E91 /* Build configuration list for PBXNativeTarget "Daily Bible Verse" */ = {
+		ECB3D2182B43808C003C2E91 /* Build configuration list for PBXNativeTarget "Bible Verse of the Day (FREE)" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECB3D2192B43808C003C2E91 /* Debug */,
@@ -598,7 +598,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECB3D21B2B43808C003C2E91 /* Build configuration list for PBXNativeTarget "Daily Bible VerseTests" */ = {
+		ECB3D21B2B43808C003C2E91 /* Build configuration list for PBXNativeTarget "Bible Verse of the Day (FREE)Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECB3D21C2B43808C003C2E91 /* Debug */,
@@ -607,7 +607,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ECB3D21E2B43808C003C2E91 /* Build configuration list for PBXNativeTarget "Daily Bible VerseUITests" */ = {
+		ECB3D21E2B43808C003C2E91 /* Build configuration list for PBXNativeTarget "Bible Verse of the Day (FREE)UITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				ECB3D21F2B43808C003C2E91 /* Debug */,
