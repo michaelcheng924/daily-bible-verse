@@ -38,6 +38,11 @@ struct ContentView: View {
             }
             .tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
             .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+            .onAppear {
+                NotificationCenter.default.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: .main) { _ in
+                    verseIndex = calculateVerseIndexForCurrentDate()
+                }
+            }
             
             VStack {
                 Spacer()
@@ -46,22 +51,32 @@ struct ContentView: View {
                     Spacer()
                     
                     if isOptionsExpanded {
-                        Button(action: {
-                            // Handle the action for the first option
-                        }) {
-                            Image(systemName: "option1Icon")
-                                .font(.title)
-                                .padding()
+                        if verseIndex != calculateVerseIndexForCurrentDate() {
+                            Button(action: {
+                                let calculatedVerseIndex = calculateVerseIndexForCurrentDate()
+                                verseIndex = calculatedVerseIndex
+                            }) {
+                                Image(systemName: "house")
+                                    .font(.title)
+                                    .padding()
+                            }
+                            .background(Color.white)
+                            .cornerRadius(30)
+                            .shadow(radius: 3)
+                            .transition(.move(edge: .trailing))
                         }
-                        .background(Color.white)
-                        .cornerRadius(30)
-                        .shadow(radius: 3)
-                        .transition(.move(edge: .trailing))
                         
                         Button(action: {
-                            // Handle the action for the second option
+                            let currentVerseIndex = verseIndex
+                            var randomVerseIndex: Int
+                            
+                            repeat {
+                                randomVerseIndex = Int.random(in: 0...364)
+                            } while randomVerseIndex == currentVerseIndex
+                            
+                            verseIndex = randomVerseIndex
                         }) {
-                            Image(systemName: "option2Icon")
+                            Image(systemName: "shuffle")
                                 .font(.title)
                                 .padding()
                         }

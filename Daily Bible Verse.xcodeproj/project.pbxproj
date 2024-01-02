@@ -11,6 +11,7 @@
 		8ED8902D2B43C85D00069879 /* VerseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8902C2B43C85D00069879 /* VerseView.swift */; };
 		8ED890302B44777300069879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8902F2B44777300069879 /* AppDelegate.swift */; };
 		8ED890322B4490AD00069879 /* OptionsDialogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED890312B4490AD00069879 /* OptionsDialogView.swift */; };
+		8ED890342B44B80F00069879 /* Daily-Bible-Verse-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8ED890332B44B80F00069879 /* Daily-Bible-Verse-Info.plist */; };
 		ECB3D1F82B43808A003C2E91 /* Daily_Bible_VerseApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3D1F72B43808A003C2E91 /* Daily_Bible_VerseApp.swift */; };
 		ECB3D1FA2B43808A003C2E91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECB3D1F92B43808A003C2E91 /* ContentView.swift */; };
 		ECB3D1FC2B43808B003C2E91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ECB3D1FB2B43808B003C2E91 /* Assets.xcassets */; };
@@ -43,6 +44,7 @@
 		8ED8902E2B4473E200069879 /* Daily Bible Verse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Daily Bible Verse.entitlements"; sourceTree = "<group>"; };
 		8ED8902F2B44777300069879 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8ED890312B4490AD00069879 /* OptionsDialogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsDialogView.swift; sourceTree = "<group>"; };
+		8ED890332B44B80F00069879 /* Daily-Bible-Verse-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Daily-Bible-Verse-Info.plist"; sourceTree = "<group>"; };
 		ECB3D1F42B43808A003C2E91 /* Daily Bible Verse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Daily Bible Verse.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECB3D1F72B43808A003C2E91 /* Daily_Bible_VerseApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Daily_Bible_VerseApp.swift; sourceTree = "<group>"; };
 		ECB3D1F92B43808A003C2E91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				8ED8902E2B4473E200069879 /* Daily Bible Verse.entitlements */,
 				ECB3D1F72B43808A003C2E91 /* Daily_Bible_VerseApp.swift */,
 				ECB3D1F92B43808A003C2E91 /* ContentView.swift */,
+				8ED890332B44B80F00069879 /* Daily-Bible-Verse-Info.plist */,
 				8ED890312B4490AD00069879 /* OptionsDialogView.swift */,
 				8ED8902A2B43A4A300069879 /* VerseModel.swift */,
 				8ED8902F2B44777300069879 /* AppDelegate.swift */,
@@ -245,6 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8ED890342B44B80F00069879 /* Daily-Bible-Verse-Info.plist in Resources */,
 				ECB3D1FF2B43808B003C2E91 /* Preview Assets.xcassets in Resources */,
 				ECB3D1FC2B43808B003C2E91 /* Assets.xcassets in Resources */,
 			);
@@ -439,6 +443,7 @@
 				DEVELOPMENT_TEAM = FX57JRATNK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DailyVerse;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -469,6 +474,7 @@
 				DEVELOPMENT_TEAM = FX57JRATNK;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = DailyVerse;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
