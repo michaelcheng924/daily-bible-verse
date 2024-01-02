@@ -21,6 +21,7 @@ struct ContentView: View {
             }
         }
         .tabViewStyle(PageTabViewStyle())
+        .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
     }
     
     func incrementPage() {
