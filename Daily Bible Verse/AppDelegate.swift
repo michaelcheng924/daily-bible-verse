@@ -7,8 +7,10 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class AppDelegate: NSObject, UIApplicationDelegate {
+    var backgroundMusicPlayer: AVAudioPlayer?
     
     // swiftlint: disable line_length
     func application(_ application: UIApplication,
@@ -27,6 +29,25 @@ class AppDelegate: NSObject, UIApplicationDelegate {
             }
         }
         
+        // Set up and play background music
+        setupBackgroundMusic()
+        
         return true
+    }
+    
+    func setupBackgroundMusic() {
+        if let path = Bundle.main.path(forResource: "music-pathfinder", ofType: "mp3") {
+            let url = URL(fileURLWithPath: path)
+            
+            do {
+                backgroundMusicPlayer = try AVAudioPlayer(contentsOf: url)
+                backgroundMusicPlayer?.numberOfLoops = -1 // To loop indefinitely
+                backgroundMusicPlayer?.volume = 0.5 // Adjust the volume as needed
+                backgroundMusicPlayer?.prepareToPlay()
+                backgroundMusicPlayer?.play()
+            } catch {
+                print("Error loading and playing background music: \(error.localizedDescription)")
+            }
+        }
     }
 }
