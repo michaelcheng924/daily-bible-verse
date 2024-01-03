@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-class AppDelegate: NSObject, UIApplicationDelegate {    
+class AppDelegate: NSObject, UIApplicationDelegate {
     // swiftlint: disable line_length
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {

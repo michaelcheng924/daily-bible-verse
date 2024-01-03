@@ -14,10 +14,53 @@ struct ContentView: View {
     @State private var verseIndex = 0
     private let verses = Verse.verses
     @State private var isOptionsExpanded = false
+    @State private var isGearIconTapped = false
+    @State private var isMusicOff = false
+    @State private var isEsv = true
     
     init() {
         let calculatedVerseIndex = calculateVerseIndexForCurrentDate()
         _verseIndex = State(initialValue: calculatedVerseIndex)
+        
+        scheduleDailyNotification()
+    }
+    
+    func scheduleDailyNotification() {
+        let content = UNMutableNotificationContent()
+        content.sound = UNNotificationSound.default
+        
+        let calendar = Calendar.current
+        let currentDate = Date()
+        
+        // Calculate the day of the year (0-based index)
+        let dayOfYear = calendar.ordinality(of: .day, in: .year, for: currentDate) ?? 0
+        
+        // Calculate the tag for the verse
+        let verseTag = dayOfYear % Verse.verses.count
+        
+        // Use the tag to fetch the corresponding verse
+        let selectedVerse = Verse.verses[verseIndex]
+        
+        content.title = selectedVerse.verse
+        if (isEsv) {
+            content.body = selectedVerse.esvTranslation
+        } else {
+            content.body = selectedVerse.kjvTranslation
+        }
+        
+        var dateComponents = DateComponents()
+        dateComponents.hour = 9
+        dateComponents.minute = 0
+//        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true) // 2 minutes = 120 seconds
+
+        let request = UNNotificationRequest(identifier: "dailyVerseNotification", content: content, trigger: trigger)
+        
+        UNUserNotificationCenter.current().add(request) { (error) in
+            if let error = error {
+                print("Error scheduling daily notification: \(error.localizedDescription)")
+            }
+        }
     }
     
     func calculateVerseIndexForCurrentDate() -> Int {
@@ -49,7 +92,7 @@ struct ContentView: View {
         ZStack {
             TabView(selection: $verseIndex) {
                 ForEach(verses) { verse in
-                    VerseView(verse: verse)
+                    VerseView(verse: verse, isEsv: isEsv)
                         .tag(verse.tag)
                 }
             }
@@ -69,7 +112,48 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     
-                    if isOptionsExpanded {
+                    if isGearIconTapped {
+                        Button(action: {
+                            if isMusicOff {
+                                backgroundMusicPlayer?.play()
+                            } else {
+                                backgroundMusicPlayer?.stop()
+                            }
+                            
+                            isMusicOff.toggle()
+                        }) {
+                            Group {
+                                if isMusicOff {
+                                    Image(systemName: "speaker.slash.fill")
+                                } else {
+                                    Image(systemName: "speaker.fill")
+                                }
+                            }
+                                .font(.title3)
+                                .padding(8)
+                        }
+                        .background(Color.white)
+                        .cornerRadius(30)
+                        .shadow(radius: 3)
+                        
+                        Button(action: {
+                            isEsv.toggle()
+                        }) {
+                            Group {
+                                if isEsv {
+                                    Text("ESV")
+                                } else {
+                                    Text("KJV")
+                                }
+                            }
+                            .font(.title3)
+                            .padding(8)
+                            .bold()
+                        }
+                        .background(Color.white)
+                        .cornerRadius(30)
+                        .shadow(radius: 3)
+                    } else if isOptionsExpanded {
                         if verseIndex != calculateVerseIndexForCurrentDate() {
                             Button(action: {
                                 let calculatedVerseIndex = calculateVerseIndexForCurrentDate()
@@ -103,7 +187,7 @@ struct ContentView: View {
                         .shadow(radius: 3)
                         
                         Button(action: {
-                            backgroundMusicPlayer?.stop()
+                            isGearIconTapped = true
                         }) {
                             Image(systemName: "gearshape")
                                 .font(.title3)
@@ -135,6 +219,7 @@ struct ContentView: View {
                     
                     Button(action: {
                         isOptionsExpanded.toggle()
+                        isGearIconTapped = false
                     }) {
                         Image(systemName: isOptionsExpanded ? "xmark.circle.fill" : "ellipsis")
                             .font(.title3)

@@ -9,6 +9,7 @@ import SwiftUI
 
 struct VerseView: View {
     var verse: Verse
+    var isEsv: Bool
     
     var imageNames = ["fallLeavesBg", "purpleFlowersBg", "lightTreesBg", "waterSunBg", "leavesBg", "purpleWaterBg", "treeLightBg", "mountainCloudsBg"]
     
@@ -47,7 +48,13 @@ struct VerseView: View {
                             .shadow(color: Color.black, radius: 3, x: 2, y: 2)
                     }
                     
-                    Text(verse.esvTranslation)
+                    Group {
+                        if isEsv {
+                            Text(verse.esvTranslation)
+                        } else {
+                            Text(verse.kjvTranslation)
+                        }
+                    }
                         .padding(.horizontal, 30)
                         .font(.system(size: 36, weight: .semibold))
                         .foregroundColor(Color.white)
@@ -89,5 +96,5 @@ struct VerseView: View {
 }
 
 #Preview {
-    VerseView(verse: Verse.sampleVerse)
+    VerseView(verse: Verse.sampleVerse, isEsv: true)
 }
