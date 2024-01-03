@@ -17,7 +17,9 @@ struct ContentView: View {
     @State private var isGearIconTapped = false
     @State private var isMusicOff = false
     @State private var isEsv = true
-    
+    @State private var isInfoSheetPresented = false
+    @State private var isWebViewPresented = false
+
     init() {
         let calculatedVerseIndex = calculateVerseIndexForCurrentDate()
         _verseIndex = State(initialValue: calculatedVerseIndex)
@@ -28,9 +30,11 @@ struct ContentView: View {
     func scheduleDailyNotification() {
         let content = UNMutableNotificationContent()
         content.sound = UNNotificationSound.default
+        
+        let calculatedVerseIndex = calculateVerseIndexForCurrentDate()
                 
         // Use the tag to fetch the corresponding verse
-        let selectedVerse = Verse.verses[verseIndex]
+        let selectedVerse = Verse.verses[calculatedVerseIndex]
         
         content.title = selectedVerse.verse
         if (isEsv) {
@@ -77,7 +81,7 @@ struct ContentView: View {
             }
         }
     }
-    
+        
     var body: some View {
         ZStack {
             TabView(selection: $verseIndex) {
@@ -102,8 +106,93 @@ struct ContentView: View {
                 HStack {
                     Spacer()
                     
+                    if (!isGearIconTapped) {
+                        Button(action: {
+                            isWebViewPresented.toggle()
+                        }) {
+                            Image(systemName: "book")
+                                .font(.title3)
+                                .padding(8)
+                        }
+                        .background(Color.white)
+                        .cornerRadius(30)
+                        .shadow(radius: 3)
+                        .sheet(isPresented: $isWebViewPresented) {
+                            var verse = verses[verseIndex].verse
+                            var parts = verse.split(separator: ":")
+                            
+                            if let firstPart = parts.first {
+                                let trimmedText = String(firstPart)
+                                
+                                if isEsv {
+                                    let formattedVerse = trimmedText.replacingOccurrences(of: " ", with: "+")
+                                    let urlString = "https://www.esv.org/\(formattedVerse)"
+                                    
+                                    NavigationView {
+                                        WebView(urlString: urlString)
+                                            .navigationBarItems(trailing:
+                                                Button("Done") {
+                                                    isWebViewPresented.toggle()
+                                                }
+                                            )
+                                            .navigationBarTitle(verse, displayMode: .inline)
+                                    }
+                                } else {
+                                    let formattedVerse = trimmedText.replacingOccurrences(of: " ", with: "%20")
+                                    let urlString = "https://www.biblegateway.com/passage/?search=\(formattedVerse)&version=KJV"
+                                    
+                                    NavigationView {
+                                        WebView(urlString: urlString)
+                                            .navigationBarItems(trailing:
+                                                Button("Done") {
+                                                    isWebViewPresented.toggle()
+                                                }
+                                            )
+                                            .navigationBarTitle(verse, displayMode: .inline)
+                                    }
+                                }
+                                
+
+                                
+                            }
+                        }
+                        
+                        if verseIndex != calculateVerseIndexForCurrentDate() {
+                            Button(action: {
+                                let calculatedVerseIndex = calculateVerseIndexForCurrentDate()
+                                verseIndex = calculatedVerseIndex
+                            }) {
+                                Image(systemName: "house")
+                                    .font(.title3)
+                                    .padding(8)
+                            }
+                            .background(Color.white)
+                            .cornerRadius(30)
+                            .shadow(radius: 3)
+                        }
+                        
+                        Button(action: {
+                            let currentVerseIndex = verseIndex
+                            var randomVerseIndex: Int
+                            
+                            repeat {
+                                randomVerseIndex = Int.random(in: 0...364)
+                            } while randomVerseIndex == currentVerseIndex
+                            
+                            verseIndex = randomVerseIndex
+                        }) {
+                            Image(systemName: "shuffle")
+                                .font(.title3)
+                                .padding(8)
+                        }
+                        .background(Color.white)
+                        .cornerRadius(30)
+                        .shadow(radius: 3)
+                    }
+                    
                     if isGearIconTapped {
                         Button(action: {
+                            print(isMusicOff)
                             if isMusicOff {
                                 backgroundMusicPlayer?.play()
                             } else {
@@ -144,38 +233,6 @@ struct ContentView: View {
                         .cornerRadius(30)
                         .shadow(radius: 3)
                     } else if isOptionsExpanded {
-                        if verseIndex != calculateVerseIndexForCurrentDate() {
-                            Button(action: {
-                                let calculatedVerseIndex = calculateVerseIndexForCurrentDate()
-                                verseIndex = calculatedVerseIndex
-                            }) {
-                                Image(systemName: "house")
-                                    .font(.title3)
-                                    .padding(8)
-                            }
-                            .background(Color.white)
-                            .cornerRadius(30)
-                            .shadow(radius: 3)
-                        }
-                        
-                        Button(action: {
-                            let currentVerseIndex = verseIndex
-                            var randomVerseIndex: Int
-                            
-                            repeat {
-                                randomVerseIndex = Int.random(in: 0...364)
-                            } while randomVerseIndex == currentVerseIndex
-                            
-                            verseIndex = randomVerseIndex
-                        }) {
-                            Image(systemName: "shuffle")
-                                .font(.title3)
-                                .padding(8)
-                        }
-                        .background(Color.white)
-                        .cornerRadius(30)
-                        .shadow(radius: 3)
-                        
                         Button(action: {
                             isGearIconTapped = true
                         }) {
@@ -188,14 +245,7 @@ struct ContentView: View {
                         .shadow(radius: 3)
                         
                         Button(action: {
-                            let currentVerseIndex = verseIndex
-                            var randomVerseIndex: Int
-                            
-                            repeat {
-                                randomVerseIndex = Int.random(in: 0...364)
-                            } while randomVerseIndex == currentVerseIndex
-                            
-                            verseIndex = randomVerseIndex
+                            isInfoSheetPresented.toggle()
                         }) {
                             Image(systemName: "info.circle")
                                 .font(.title3)
@@ -204,6 +254,12 @@ struct ContentView: View {
                         .background(Color.white)
                         .cornerRadius(30)
                         .shadow(radius: 3)
+                        .sheet(isPresented: $isInfoSheetPresented) {
+                            InfoView(isPresented: $isInfoSheetPresented) {
+                                // This closure will be called when the "Close" button is tapped
+                                isInfoSheetPresented = false // Dismiss the sheet
+                            }
+                        }
                         
                     }
                     

@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8E212FE92B45AC7600E499A4 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E212FE82B45AC7600E499A4 /* WebView.swift */; };
 		8EC3978E2B44F98E00C5DE0D /* music-pathfinder.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 8EC3978D2B44F83700C5DE0D /* music-pathfinder.mp3 */; };
+		8EC397902B45173A00C5DE0D /* InfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EC3978F2B45173A00C5DE0D /* InfoView.swift */; };
 		8ED8902B2B43A4A300069879 /* VerseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8902A2B43A4A300069879 /* VerseModel.swift */; };
 		8ED8902D2B43C85D00069879 /* VerseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8902C2B43C85D00069879 /* VerseView.swift */; };
 		8ED890302B44777300069879 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8ED8902F2B44777300069879 /* AppDelegate.swift */; };
@@ -41,7 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8E212FE82B45AC7600E499A4 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
 		8EC3978D2B44F83700C5DE0D /* music-pathfinder.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "music-pathfinder.mp3"; sourceTree = "<group>"; };
+		8EC3978F2B45173A00C5DE0D /* InfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoView.swift; sourceTree = "<group>"; };
 		8ED8902A2B43A4A300069879 /* VerseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseModel.swift; sourceTree = "<group>"; };
 		8ED8902C2B43C85D00069879 /* VerseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseView.swift; sourceTree = "<group>"; };
 		8ED8902E2B4473E200069879 /* Daily Bible Verse.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Daily Bible Verse.entitlements"; sourceTree = "<group>"; };
@@ -112,9 +116,11 @@
 				8ED8902E2B4473E200069879 /* Daily Bible Verse.entitlements */,
 				ECB3D1F72B43808A003C2E91 /* Daily_Bible_VerseApp.swift */,
 				ECB3D1F92B43808A003C2E91 /* ContentView.swift */,
+				8E212FE82B45AC7600E499A4 /* WebView.swift */,
 				8ED890332B44B80F00069879 /* Daily-Bible-Verse-Info.plist */,
 				8ED890312B4490AD00069879 /* OptionsDialogView.swift */,
 				8ED8902A2B43A4A300069879 /* VerseModel.swift */,
+				8EC3978F2B45173A00C5DE0D /* InfoView.swift */,
 				8ED8902F2B44777300069879 /* AppDelegate.swift */,
 				8ED8902C2B43C85D00069879 /* VerseView.swift */,
 				8ED890372B44C2B500069879 /* Launch Screen.storyboard */,
@@ -284,11 +290,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ECB3D1FA2B43808A003C2E91 /* ContentView.swift in Sources */,
+				8E212FE92B45AC7600E499A4 /* WebView.swift in Sources */,
 				8ED8902B2B43A4A300069879 /* VerseModel.swift in Sources */,
 				8ED8902D2B43C85D00069879 /* VerseView.swift in Sources */,
 				8ED890322B4490AD00069879 /* OptionsDialogView.swift in Sources */,
 				8ED890302B44777300069879 /* AppDelegate.swift in Sources */,
 				ECB3D1F82B43808A003C2E91 /* Daily_Bible_VerseApp.swift in Sources */,
+				8EC397902B45173A00C5DE0D /* InfoView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
