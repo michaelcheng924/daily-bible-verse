@@ -28,16 +28,7 @@ struct ContentView: View {
     func scheduleDailyNotification() {
         let content = UNMutableNotificationContent()
         content.sound = UNNotificationSound.default
-        
-        let calendar = Calendar.current
-        let currentDate = Date()
-        
-        // Calculate the day of the year (0-based index)
-        let dayOfYear = calendar.ordinality(of: .day, in: .year, for: currentDate) ?? 0
-        
-        // Calculate the tag for the verse
-        let verseTag = dayOfYear % Verse.verses.count
-        
+                
         // Use the tag to fetch the corresponding verse
         let selectedVerse = Verse.verses[verseIndex]
         
@@ -51,8 +42,7 @@ struct ContentView: View {
         var dateComponents = DateComponents()
         dateComponents.hour = 9
         dateComponents.minute = 0
-//        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
-        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true) // 2 minutes = 120 seconds
+        let trigger = UNCalendarNotificationTrigger(dateMatching: dateComponents, repeats: true)
 
         let request = UNNotificationRequest(identifier: "dailyVerseNotification", content: content, trigger: trigger)
         
