@@ -38,7 +38,7 @@ struct VerseView: View {
                     .resizable()
                     .aspectRatio(contentMode: .fill)
                     .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
-                    .frame(width: geometry.size.width)
+                    .frame(width: geometry.size.width, height: geometry.size.height)
                 
                 VStack(spacing: 30) {
                     if shouldDisplayDate() {
@@ -59,6 +59,7 @@ struct VerseView: View {
                         .font(.system(size: 36, weight: .semibold))
                         .foregroundColor(Color.white)
                         .shadow(color: Color.black, radius: 3, x: 2, y: 2)
+                        .lineSpacing(6)
                     
                     Text(verse.verse)
                         .padding(.horizontal, 30)
@@ -66,8 +67,7 @@ struct VerseView: View {
                         .foregroundColor(Color.white)
                         .shadow(color: Color.black, radius: 3, x: 2, y: 2)
                 }
-                
-                
+                .frame(maxWidth: 700)
             }
         }
         
