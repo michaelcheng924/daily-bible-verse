@@ -28,7 +28,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                 print("User denied permission for push notifications")
             }
         }
-        
+
         // Set up and play background music
         setupBackgroundMusic()
         
@@ -36,15 +36,18 @@ class AppDelegate: NSObject, UIApplicationDelegate {
     }
     
     func setupBackgroundMusic() {
-        if let path = Bundle.main.path(forResource: "music-pathfinder", ofType: "mp3") {
-            let url = URL(fileURLWithPath: path)
-            
+        print(Bundle.main.url(forResource: "music-pathfinder", withExtension: "mp3"))
+        
+        if let musicURL = Bundle.main.url(forResource: "music-pathfinder", withExtension: "mp3") {
             do {
-                backgroundMusicPlayer = try AVAudioPlayer(contentsOf: url)
+                print("HIHI")
+                backgroundMusicPlayer = try AVAudioPlayer(contentsOf: musicURL)
                 backgroundMusicPlayer?.numberOfLoops = -1 // To loop indefinitely
                 backgroundMusicPlayer?.volume = 0.5 // Adjust the volume as needed
                 backgroundMusicPlayer?.prepareToPlay()
                 backgroundMusicPlayer?.play()
+                
+                print("YOYO")
             } catch {
                 print("Error loading and playing background music: \(error.localizedDescription)")
             }
