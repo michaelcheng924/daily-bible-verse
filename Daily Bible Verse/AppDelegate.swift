@@ -7,11 +7,8 @@
 
 import Foundation
 import UIKit
-import AVFoundation
 
-class AppDelegate: NSObject, UIApplicationDelegate {
-    var backgroundMusicPlayer: AVAudioPlayer?
-    
+class AppDelegate: NSObject, UIApplicationDelegate {    
     // swiftlint: disable line_length
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
@@ -28,29 +25,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
                 print("User denied permission for push notifications")
             }
         }
-
-        // Set up and play background music
-        setupBackgroundMusic()
         
         return true
-    }
-    
-    func setupBackgroundMusic() {
-        print(Bundle.main.url(forResource: "music-pathfinder", withExtension: "mp3"))
-        
-        if let musicURL = Bundle.main.url(forResource: "music-pathfinder", withExtension: "mp3") {
-            do {
-                print("HIHI")
-                backgroundMusicPlayer = try AVAudioPlayer(contentsOf: musicURL)
-                backgroundMusicPlayer?.numberOfLoops = -1 // To loop indefinitely
-                backgroundMusicPlayer?.volume = 0.5 // Adjust the volume as needed
-                backgroundMusicPlayer?.prepareToPlay()
-                backgroundMusicPlayer?.play()
-                
-                print("YOYO")
-            } catch {
-                print("Error loading and playing background music: \(error.localizedDescription)")
-            }
-        }
     }
 }

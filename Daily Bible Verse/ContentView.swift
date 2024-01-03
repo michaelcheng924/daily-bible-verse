@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import AVFoundation
 
 struct ContentView: View {
+    @State var backgroundMusicPlayer: AVAudioPlayer?
+
     @State private var verseIndex = 0
     private let verses = Verse.verses
     @State private var isOptionsExpanded = false
@@ -28,6 +31,20 @@ struct ContentView: View {
         return daysBetween.day ?? 0
     }
     
+    func playBackgroundMusic() {
+        if let musicURL = Bundle.main.url(forResource: "music-pathfinder", withExtension: "mp3") {
+            do {
+                backgroundMusicPlayer = try AVAudioPlayer(contentsOf: musicURL)
+                backgroundMusicPlayer?.numberOfLoops = -1 // To loop indefinitely
+                backgroundMusicPlayer?.volume = 0.5 // Adjust the volume as needed
+                backgroundMusicPlayer?.prepareToPlay()
+                backgroundMusicPlayer?.play()
+            } catch {
+                print("Error loading and playing background music: \(error.localizedDescription)")
+            }
+        }
+    }
+    
     var body: some View {
         ZStack {
             TabView(selection: $verseIndex) {
@@ -42,6 +59,8 @@ struct ContentView: View {
                 NotificationCenter.default.addObserver(forName: UIApplication.willEnterForegroundNotification, object: nil, queue: .main) { _ in
                     verseIndex = calculateVerseIndexForCurrentDate()
                 }
+                
+                playBackgroundMusic()
             }
             
             VStack {
@@ -57,13 +76,12 @@ struct ContentView: View {
                                 verseIndex = calculatedVerseIndex
                             }) {
                                 Image(systemName: "house")
-                                    .font(.title)
-                                    .padding()
+                                    .font(.title3)
+                                    .padding(8)
                             }
                             .background(Color.white)
                             .cornerRadius(30)
                             .shadow(radius: 3)
-                            .transition(.move(edge: .trailing))
                         }
                         
                         Button(action: {
@@ -77,15 +95,41 @@ struct ContentView: View {
                             verseIndex = randomVerseIndex
                         }) {
                             Image(systemName: "shuffle")
-                                .font(.title)
-                                .padding()
+                                .font(.title3)
+                                .padding(8)
                         }
                         .background(Color.white)
                         .cornerRadius(30)
                         .shadow(radius: 3)
-                        .transition(.move(edge: .trailing))
                         
-                        // Add more buttons for additional options as needed
+                        Button(action: {
+                            backgroundMusicPlayer?.stop()
+                        }) {
+                            Image(systemName: "gearshape")
+                                .font(.title3)
+                                .padding(8)
+                        }
+                        .background(Color.white)
+                        .cornerRadius(30)
+                        .shadow(radius: 3)
+                        
+                        Button(action: {
+                            let currentVerseIndex = verseIndex
+                            var randomVerseIndex: Int
+                            
+                            repeat {
+                                randomVerseIndex = Int.random(in: 0...364)
+                            } while randomVerseIndex == currentVerseIndex
+                            
+                            verseIndex = randomVerseIndex
+                        }) {
+                            Image(systemName: "info.circle")
+                                .font(.title3)
+                                .padding(8)
+                        }
+                        .background(Color.white)
+                        .cornerRadius(30)
+                        .shadow(radius: 3)
                         
                     }
                     
@@ -93,8 +137,8 @@ struct ContentView: View {
                         isOptionsExpanded.toggle()
                     }) {
                         Image(systemName: isOptionsExpanded ? "xmark.circle.fill" : "ellipsis")
-                            .font(.title)
-                            .padding()
+                            .font(.title3)
+                            .padding(8)
                     }
                     .background(Color.white)
                     .cornerRadius(30)
