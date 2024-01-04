@@ -98,6 +98,15 @@ struct ContentView: View {
                     verseIndex = calculateVerseIndexForCurrentDate()
                 }
                 
+                // Configure AVAudioSession
+                do {
+                    let session = AVAudioSession.sharedInstance()
+                    try session.setCategory(.playback, options: [.mixWithOthers])
+                    try session.setActive(true)
+                } catch {
+                    print("Error setting up AVAudioSession: \(error)")
+                }
+                
                 playBackgroundMusic()
             }
             
