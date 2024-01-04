@@ -29,6 +29,10 @@ struct InfoView: View {
         .padding(.horizontal)
         .padding(.top)
         
+        Text("Unless otherwise indicated, all Scripture quotations are from The ESV® Bible (The Holy Bible, English Standard Version®), © 2001 by Crossway, a publishing ministry of Good News Publishers. Used by permission. All rights reserved.")
+            .padding(.horizontal)
+            .padding(.top)
+        
         Button(action: {
             dismissAction()
         }) {

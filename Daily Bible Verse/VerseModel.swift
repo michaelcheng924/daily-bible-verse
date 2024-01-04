@@ -13,359 +13,382 @@ struct Verse: Identifiable {
     var esvTranslation: String
     var kjvTranslation: String
     var devotional: String
+    var prayer: String
     var tag: Int
     
-    static var sampleVerse = Verse(verse: "Sample Verse", esvTranslation: "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.", kjvTranslation: "Sample KJV", devotional: "Sample devotional", tag: 1)
+    static var sampleVerse = Verse(verse: "Sample Verse", esvTranslation: "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.", kjvTranslation: "Sample KJV", devotional: "Sample devotional", prayer: "prayer", tag: 1)
     
     static var verses = [
         Verse(
             verse: "Genesis 1:1",
             esvTranslation: "In the beginning, God created the heavens and the earth.",
             kjvTranslation: "In the beginning God created the heaven and the earth.",
-            devotional: "This first verse of the Bible establishes that God is the all-powerful Creator of everything, the only eternal being that exists outside of time and space. Recognizing God's role as Creator helps us live with proper humility, awe, and thankfulness towards Him.",
+            devotional: "This opening verse of the Bible highlights the unlimited power and sovereignty of God as the Creator of the universe. It instills in us a sense of awe and wonder for the vastness and complexity of creation. Recognizing God's role as the Creator also brings a deep sense of humility and responsibility. It encourages us to appreciate and care for the world He has entrusted to us, and to live in harmony with the natural order of His creation.",
+            prayer: "Heavenly Father, we stand in awe of Your magnificent creation. Help us to always remember and respect Your role as the Creator. Instill in us a sense of responsibility and stewardship for the earth and all living things. May our lives reflect Your glory and care for the world You have made. Amen.",
             tag: 0
         ),
         Verse(
             verse: "John 3:16",
             esvTranslation: "For God so loved the world, that he gave his only Son, that whoever believes in him should not perish but have eternal life.",
             kjvTranslation: "For God so loved the world, that he gave his only begotten Son, that whosoever believeth in him should not perish, but have everlasting life.",
-            devotional: "This popular verse summarizes the gospel - that God deeply loves us and sent His Son Jesus to die on our behalf, so that if we believe in Him we can have a relationship with God and eternal life with Him.",
+            devotional: "John 3:16 is one of the most profound verses in the Bible, encapsulating the essence of the gospel - God's immense love and the sacrifice of Jesus Christ. This verse serves as a powerful reminder of the extent of God's love for humanity and the transformative power of belief in Jesus Christ. It is an invitation to embrace a personal relationship with God, rooted in faith and trust. By believing in Jesus, we are promised eternal life, which reshapes our perspective on our earthly journey and our eternal destiny.",
+            prayer: "Lord God, we thank You for Your indescribable love and the gift of Your Son, Jesus Christ. May our hearts be filled with gratitude and faith in Your promise of eternal life. Guide us to share Your love with others and to live each day in the light of Your grace and truth. Amen.",
             tag: 1
         ),
         Verse(
             verse: "Romans 6:23",
             esvTranslation: "For the wages of sin is death, but the free gift of God is eternal life in Christ Jesus our Lord.",
             kjvTranslation: "For the wages of sin is death; but the gift of God is eternal life through Jesus Christ our Lord.",
-            devotional: "This verse contrasts the consequences of sin (death) and the gift of salvation (eternal life). It reminds us that on our own we only deserve death, but by God's grace through Christ, we can receive the free gift of eternal life instead.",
+            devotional: "Romans 6:23 starkly contrasts the consequences of sin with the gift of salvation. This verse reminds us that, while sin leads to spiritual death, God offers us the incredible gift of eternal life through Jesus Christ. It highlights the gravity of sin and the magnanimity of God's grace. As believers, we are called to acknowledge our sinfulness, turn away from sin, and embrace the life that is found only in Jesus. This verse encourages us to live in gratitude for the unmerited gift of eternal life and to share this good news with others.",
+            prayer: "Gracious God, we thank You for the gift of salvation through Jesus Christ. Help us to turn away from our sins and embrace the new life You offer. May we live each day in gratitude for Your grace and share the hope of eternal life with those around us. In Jesus' name, Amen.",
             tag: 2
         ),
         Verse(
             verse: "Philippians 4:13",
             esvTranslation: "I can do all things through him who strengthens me.",
             kjvTranslation: "I can do all things through Christ which strengtheneth me.",
-            devotional: "Christ gives believers strength to endure any hardship or trial that comes our way. Through faith in Him, we gain access to a supernatural power that helps us push past our human limitations.",
+            devotional: "Philippians 4:13 is a powerful affirmation of the strength we receive through faith in Christ. This verse reassures us that, no matter the challenges we face, Christ empowers us to overcome them. It's a reminder to rely not on our own strength, but on the strength that comes from our relationship with Jesus. This enables us to face trials with courage and to accomplish tasks that seem beyond our natural ability. In every situation, we are more than conquerors through Him who loves us.",
+            prayer: "Lord Jesus, thank You for being our strength in times of weakness. Help us to rely on You in all circumstances, trusting that we can do all things through Your strength. May Your power be evident in our lives as we face each challenge with faith and courage. Amen.",
             tag: 3
         ),
         Verse(
             verse: "John 14:6",
             esvTranslation: "Jesus said to him, “I am the way, and the truth, and the life. No one comes to the Father except through me.",
             kjvTranslation: "Jesus saith unto him, I am the way, the truth, and the life: no man cometh unto the Father, but by me.",
-            devotional: "Jesus proclaimed Himself as the only way to a relationship with God - He is the path to truth and life. This shows Christ's claim to be the long-awaited Messiah, the unique bridge between God and humanity through His sacrifice on the cross.",
+            devotional: "In John 14:6, Jesus declares Himself as the exclusive path to God, emphasizing His unique role as the way, the truth, and the life. This verse is a cornerstone of Christian faith, affirming that Jesus is the only mediator between God and humanity. It challenges us to understand and embrace the truth of Jesus' identity and His teachings. Through Jesus, we find the way to a genuine relationship with God and the promise of eternal life. This verse encourages us to walk in His ways, seek His truth, and live the life He has called us to.",
+            prayer: "Dear Jesus, we acknowledge You as the way, the truth, and the life. Guide us in Your ways, help us to embrace Your truth, and lead us to the life eternal that You promise. May we always seek You first in all things and point others to Your saving grace. Amen.",
             tag: 4
         ),
         Verse(
             verse: "Proverbs 3:5-6",
             esvTranslation: "Trust in the Lord with all your heart, and do not lean on your own understanding. In all your ways acknowledge him, and he will make straight your paths.",
             kjvTranslation: "Trust in the Lord with all thine heart; and lean not unto thine own understanding. In all thy ways acknowledge him, and he shall direct thy paths.",
-            devotional: "This passage reminds us to fully rely on God rather than our own wisdom. He knows what is best for us and will guide us if we commit our lives to Him.",
+            devotional: "This passage emphasizes the importance of wholehearted trust in God above our own insights or understanding. It teaches us that when we surrender our plans and decisions to God and acknowledge His sovereignty in all aspects of our lives, He will guide us faithfully. This trust in God brings clarity and direction, ensuring our paths align with His divine will and purpose. It's a call to live a life of faith, acknowledging God's wisdom and guidance in every situation.",
+            prayer: "Lord, help us to trust in You with all our hearts and not rely solely on our understanding. Guide our steps and decisions, and lead us along the right paths for our lives. Teach us to seek Your wisdom and direction in everything we do. Amen.",
             tag: 5
         ),
+
         Verse(
             verse: "Matthew 6:33",
             esvTranslation: "But seek first the kingdom of God and his righteousness, and all these things will be added to you.",
             kjvTranslation: "But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.",
-            devotional: "Rather than worrying about material needs, Jesus calls us to prioritize pursuing God's kingdom and righteousness. God promises to provide for us when we seek Him first.",
+            devotional: "Jesus teaches the importance of prioritizing God's kingdom and righteousness over worldly concerns and material needs. This verse reassures us that when we focus on spiritual growth and align our lives with God's will, He will take care of our earthly needs. It's a call to shift our priorities, placing God at the center of our lives, and trusting that He knows and will provide what we need. By doing so, we can experience the peace and provision that comes from living in accordance with God's plan.",
+            prayer: "Heavenly Father, guide us to seek Your kingdom and righteousness above all else. Help us to trust in Your provision and care, knowing that as we focus on You, our needs will be met. May our lives reflect Your priorities and values. Amen.",
             tag: 6
         ),
+
         Verse(
             verse: "Joshua 1:9",
             esvTranslation: "Have I not commanded you? Be strong and courageous. Do not be frightened, and do not be dismayed, for the Lord your God is with you wherever you go.",
             kjvTranslation: "Have not I commanded thee? Be strong and of a good courage; be not afraid, neither be thou dismayed: for the Lord thy God is with thee whithersoever thou goest.",
-            devotional: "When facing intimidating challenges in life, we can receive strength and courage from the reminder that God is always with us through His Spirit, ready to help us.",
+            devotional: "This verse is a powerful reminder that God calls us to be strong and courageous in the face of life's challenges. It reassures us that we are not alone; God is with us in every situation, providing the strength and courage we need. This promise allows us to face fears, uncertainties, and difficulties with confidence, knowing that God's presence is a constant source of support and guidance. It's an encouragement to step out in faith, trusting that God will be with us in every journey and every trial.",
+            prayer: "Lord God, thank You for being with us in every circumstance. Grant us strength and courage to face the challenges ahead. Remind us that we are never alone, for You are with us wherever we go. Help us to trust in Your presence and guidance. Amen.",
             tag: 7
         ),
-        Verse(verse: "Jeremiah 29:11",
-              esvTranslation: "'For I know the plans I have for you,' declares the Lord, 'plans to prosper you and not to harm you, plans to give you hope and a future.'",
-              kjvTranslation: "For I know the thoughts that I think toward you, saith the Lord, thoughts of peace, and not of evil, to give you an expected end.",
-              devotional: "This verse gives us hope through the promise that God has good and wonderful plans for our lives. He works even through our struggles to give us a blessed future with Him.",
-              tag: 8
-             ),
+
+        Verse(
+            verse: "Jeremiah 29:11",
+            esvTranslation: "'For I know the plans I have for you,' declares the Lord, 'plans to prosper you and not to harm you, plans to give you hope and a future.'",
+            kjvTranslation: "For I know the thoughts that I think toward you, saith the Lord, thoughts of peace, and not of evil, to give you an expected end.",
+            devotional: "This verse is a powerful declaration of God's benevolent intentions for our lives. It assures us that God's plans are designed to prosper us, not harm us, and that He has a hopeful future in store for us. This promise is a source of comfort and hope, especially in times of uncertainty or difficulty. It encourages us to trust in God's plan, even when we don't understand our current circumstances, and to look forward with hope to the future He has prepared for us.",
+            prayer: "Heavenly Father, thank You for Your plans for our lives, plans filled with hope and a future. Help us to trust in Your providence, especially in times of uncertainty. May we rest in the knowledge that You are working all things for our good. Amen.",
+            tag: 8
+        ),
+
         Verse(
             verse: "2 Timothy 3:16-17",
             esvTranslation: "All Scripture is breathed out by God and profitable for teaching, for reproof, for correction, and for training in righteousness, that the man of God may be complete, equipped for every good work.",
             kjvTranslation: "All scripture is given by inspiration of God, and is profitable for doctrine, for reproof, for correction, for instruction in righteousness. That the man of God may be perfect, thoroughly furnished unto all good works.",
-            devotional: "This reminds us that the Bible is inspired by God and essential for teaching, guiding, correcting and equipping us to live godly lives. Reading Scripture helps transform us into maturity.",
+            devotional: "This passage emphasizes the divine inspiration of Scripture and its crucial role in teaching, correcting, and guiding us in righteousness. It underscores the Bible's importance in providing spiritual knowledge and moral guidance, enabling us to grow in faith and maturity. Through Scripture, God equips us for every good work, shaping our character and directing our actions. It's a reminder of the transformative power of God's Word in our lives, leading us to live in a way that is pleasing to Him.",
+            prayer: "Lord, thank You for Your Word, which guides and shapes our lives. Help us to immerse ourselves in Scripture, learning from its teachings and applying its truths. May Your Word equip us for every good work, growing us in righteousness and godliness. Amen.",
             tag: 9
         ),
         Verse(
             verse: "Psalm 23:1",
             esvTranslation: "The Lord is my shepherd; I shall not want.",
             kjvTranslation: "The Lord is my shepherd; I shall not want.",
-            devotional: "This beloved psalm depicts God as a caring shepherd watching over us, His sheep. We can trust in His provision and experience the peace and rest He brings.",
+            devotional: "Psalm 23 opens with a powerful image of God as a shepherd, providing and caring for us. This verse assures us of God's provision and guidance. Like a shepherd cares for his sheep, God looks after our needs, ensuring that we lack nothing essential. It's a reminder to trust in God's ability to provide and to find contentment in His care. This image of the shepherd also conveys a sense of peace, safety, and rest under God's watchful eye.",
+            prayer: "Heavenly Father, thank You for being our Shepherd. Help us to trust in Your provision and guidance. May we find peace and contentment in Your care, knowing that You supply all our needs. Lead us in paths of righteousness for Your name's sake. Amen.",
             tag: 10
         ),
-        
         Verse(
             verse: "Isaiah 41:10",
             esvTranslation: "Fear not, for I am with you; be not dismayed, for I am your God; I will strengthen you, I will help you, I will uphold you with my righteous right hand.",
             kjvTranslation: "Fear thou not; for I am with thee: be not dismayed; for I am thy God: I will strengthen thee; yea, I will help thee; yea, I will uphold thee with the right hand of my righteousness.",
-            devotional: "When afraid, we can be comforted knowing God is personally with us, promising to give us strength, help and uphold us. He rescues us and gives us victory.",
+            devotional: "Isaiah 41:10 is a profound reassurance of God's presence and support in our lives. It encourages us to not fear, as God is with us, providing strength, help, and upholding us. This verse reminds us of the personal relationship we have with God – He is not a distant deity, but a loving God who is actively involved in our lives. His promise to strengthen and uphold us offers comfort and courage in the face of fears and challenges.",
+            prayer: "Lord God, thank You for Your promise to be with us, to strengthen and uphold us. In times of fear and uncertainty, help us to remember Your presence and to draw strength from You. May we walk in confidence, knowing that Your righteous right hand is holding us up. Amen.",
             tag: 11
         ),
-        
         Verse(
             verse: "Luke 6:27",
             esvTranslation: "But I say to you who hear, Love your enemies, do good to those who hate you",
             kjvTranslation: "But I say unto you which hear, Love your enemies, do good to them which hate you,",
-            devotional: "Jesus calls us to a radical kind of love - loving even our enemies. This demonstrates God's love flowing through us, overcoming evil with grace.",
+            devotional: "In this challenging command, Jesus calls us to embody a love that transcends natural human inclination – to love our enemies. This radical love is a hallmark of Christian discipleship, reflecting God's unconditional love for us. Loving our enemies and doing good to those who hate us is a powerful testimony of God's grace at work in our lives. It's about overcoming evil with good and showing the same grace to others that God has shown to us.",
+            prayer: "Dear Lord, help us to love as You love, even those who oppose us. Give us the strength and grace to show kindness and compassion to our enemies. May our actions reflect Your love and lead others to Your grace. In Jesus' name, Amen.",
             tag: 12
         ),
-        
         Verse(
             verse: "1 Corinthians 10:13",
             esvTranslation: "No temptation has overtaken you that is not common to man. God is faithful, and he will not let you be tempted beyond your ability, but with the temptation he will also provide the way of escape, that you may be able to endure it.",
             kjvTranslation: "There hath no temptation taken you but such as is common to man: but God is faithful, who will not suffer you to be tempted above that ye are able; but will with the temptation also make a way to escape, that ye may be able to bear it.",
-            devotional: "In our struggle against sin, we have God's promise that He will limit temptations and provide us a way out so we can stand up under it. We have access to His power to resist.",
+            devotional: "1 Corinthians 10:13 offers reassurance that in our struggles against temptation, we are not alone nor without divine assistance. God, in His faithfulness, limits the extent of our temptations and provides a way out. This verse encourages us to look for God's escape routes in times of temptation, strengthening our faith and resilience. It's a reminder of God's attentiveness to our struggles and His readiness to help us overcome them.",
+            prayer: "Father, thank You for Your faithfulness in times of temptation. Help us to see and take the way of escape You provide. Strengthen us to resist temptation and to grow in spiritual maturity. In Jesus' name, Amen.",
             tag: 13
         ),
-        
         Verse(
             verse: "1 John 1:9",
             esvTranslation: "If we confess our sins, he is faithful and just to forgive us our sins and to cleanse us from all unrighteousness.",
             kjvTranslation: "If we confess our sins, he is faithful and just to forgive us our sins, and to cleanse us from all unrighteousness.",
-            devotional: "This offers us the gift of God's complete forgiveness and purification from sin when we humble ourselves to confess our sins before Him. He is faithful to wash us clean again.",
+            devotional: "1 John 1:9 is a profound promise of redemption and forgiveness. It assures us that when we confess our sins, God is faithful and just to forgive us and purify us. This verse highlights the importance of confession in our spiritual lives and the transformative power of God's forgiveness. Confession brings healing and restoration, allowing us to live in the freedom of God's grace. It's a call to humility and honesty before God, trusting in His mercy and forgiveness.",
+            prayer: "Lord, we thank You for the gift of forgiveness and cleansing. Help us to come before You with honest hearts, confessing our sins. Thank You for Your faithfulness in forgiving us and purifying us from all unrighteousness. In Jesus' name, Amen.",
             tag: 14
         ),
         Verse(
             verse: "Romans 8:28",
             esvTranslation: "And we know that for those who love God all things work together for good, for those who are called according to his purpose.",
             kjvTranslation: "And we know that all things work together for good to them that love God, to them who are the called according to his purpose.",
-            devotional: "During our trials in life, Romans 8:28 offers the encouragement that God uses even painful things for an ultimate good purpose for those who love Him. He has a plan to redeem our suffering.",
+            devotional: "Romans 8:28 assures us that God orchestrates every aspect of our lives for our ultimate benefit when we love Him and align with His purpose. This promise encourages us to look beyond our current circumstances, trusting that God is at work even in difficult times. It's a reminder of God's sovereign control and His ability to use even the most challenging situations for good. In the midst of trials, we can take comfort in the knowledge that God's plans are always for our good and His glory.",
+            prayer: "Dear Father, we trust in Your promise that all things work together for our good. Help us to see Your hand in every situation, trusting that You are working for our benefit and Your glory. Give us the strength to endure and the faith to trust in Your purpose. Amen.",
             tag: 15
         ),
-        
         Verse(
             verse: "Ephesians 2:8-9",
             esvTranslation: "For by grace you have been saved through faith. And this is not your own doing; it is the gift of God, not a result of works, so that no one may boast.",
             kjvTranslation: "For by grace are ye saved through faith; and that not of yourselves: it is the gift of God: Not of works, lest any man should boast.",
-            devotional: "We contribute nothing to our salvation - it is purely by God's underserved grace and mercy, received through faith in Christ. This eliminates all pride, as we can only humbly accept this free gift.",
+            devotional: "Ephesians 2:8-9 emphasizes that salvation is a gift of grace from God, received through faith. This humbling truth reminds us that we cannot earn our way into God's favor; it is purely His gracious gift. This passage invites us to relinquish any notion of self-sufficiency in spiritual matters, recognizing that our salvation is entirely due to God's mercy and love. It calls us to a humble gratitude and a life that reflects our appreciation for this unmerited gift.",
+            prayer: "Heavenly Father, thank You for the gift of salvation through grace. Help us to receive this gift with humble hearts, knowing we cannot earn it. May our lives be a response of gratitude and service, reflecting Your love and grace. Amen.",
             tag: 16
         ),
-        
         Verse(
             verse: "Proverbs 18:10",
             esvTranslation: "The name of the Lord is a strong tower; the righteous man runs into it and is safe.",
             kjvTranslation: "The name of the Lord is a strong tower: the righteous runneth into it, and is safe.",
-            devotional: "We have spiritual protection and refuge in God's name and character. Just as we'd run to a literal fortress, we can run to the Lord Most High for safety at any time.",
+            devotional: "Proverbs 18:10 paints a vivid picture of God as our protector and safe refuge. The name of the Lord symbolizes His character and power, a mighty fortress for those who are righteous. This verse encourages us to seek refuge in God, trusting in His strength and protection. It reminds us that true safety and security are found not in earthly structures or defenses, but in the Lord Himself. In times of trouble or fear, we can run to Him for safety and peace.",
+            prayer: "Lord, we thank You for being our strong tower and refuge. In times of trouble, remind us to run to You for safety. Help us to trust in Your protection and find peace in Your presence. Amen.",
             tag: 17
         ),
-        
         Verse(
             verse: "Matthew 11:28-30",
             esvTranslation: "Come to me, all who labor and are heavy laden, and I will give you rest. Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. For my yoke is easy, and my burden is light.",
             kjvTranslation: "Come unto me, all ye that labour and are heavy laden, and I will give you rest. Take my yoke upon you, and learn of me; for I am meek and lowly in heart: and ye shall find rest unto your souls. For my yoke is easy, and my burden is light.",
-            devotional: "Jesus offers us rest, comfort and peace for our souls if we come to Him. He asks us to submit to His lordship, promising it is light and easy compared to aimlessly struggling on our own.",
+            devotional: "In Matthew 11:28-30, Jesus extends a gracious invitation to those burdened by life's struggles. He promises rest and peace to those who come to Him. This passage encourages us to lay down our burdens at Jesus' feet and take up His yoke, which is light and easy. It's a call to find comfort, guidance, and rest in Christ's teachings and presence. Jesus' gentleness and humility offer a refuge for our weary souls, guiding us towards a life of peace and fulfillment in Him.",
+            prayer: "Lord Jesus, we come to You with our burdens and weariness. Grant us Your rest and peace. Teach us to walk in Your ways and to find comfort in Your gentle and humble heart. May we experience the lightness of Your yoke and the joy of walking with You. Amen.",
             tag: 18
         ),
-        
         Verse(
             verse: "Psalm 136:1",
             esvTranslation: "Give thanks to the Lord, for he is good, for his steadfast love endures forever.",
             kjvTranslation: "O give thanks unto the Lord; for he is good: for his mercy endureth for ever.",
-            devotional: "This verse calls us to praise and thank God continually for His eternal, faithful love. His goodness and mercy never fails, but continues on from generation to generation.",
+            devotional: "Psalm 136:1 is a call to continually give thanks to God for His enduring goodness and steadfast love. It reminds us that God's love is not fleeting or conditional, but constant and eternal. This verse encourages us to maintain a posture of gratitude and praise, recognizing God's unchanging nature and His faithful love that sustains us through all circumstances. It's an invitation to celebrate God's goodness and to rest in the assurance of His everlasting love.",
+            prayer: "Lord, we thank You for Your steadfast love and unending goodness. Help us to always remember and give thanks for Your faithfulness. May our hearts be filled with gratitude and praise for Your enduring mercy. Amen.",
             tag: 19
         ),
         Verse(
             verse: "James 1:2-3",
             esvTranslation: "Count it all joy, my brothers, when you meet trials of various kinds, for you know that the testing of your faith produces steadfastness.",
             kjvTranslation: "My brethren, count it all joy when ye fall into divers temptations; Knowing this, that the trying of your faith worketh patience.",
-            devotional: "Though hardships are unpleasant, God uses them to develop godly character in us, if we face them with joy and faith. Our struggles can strengthen our trust in God.",
+            devotional: "James 1:2-3 challenges us to view trials as opportunities for spiritual growth. It encourages us to approach difficulties with joy, knowing that these experiences test our faith and develop perseverance. This perspective shifts our focus from the immediate discomfort of trials to the long-term benefits of enduring them with faith. It's an invitation to trust in God's purpose through our struggles, allowing them to strengthen our character and deepen our reliance on Him.",
+            prayer: "Heavenly Father, help us to face trials with joy and faith, knowing that You are refining our character. Give us the strength to persevere and grow through these challenges. Teach us to rely on You and to see Your hand at work in every circumstance. Amen.",
             tag: 20
         ),
-        
         Verse(
             verse: "2 Corinthians 5:17",
             esvTranslation: "Therefore, if anyone is in Christ, he is a new creation. The old has passed away; behold, the new has come.",
             kjvTranslation: "Therefore if any man be in Christ, he is a new creature: old things are passed away; behold, all things are become new.",
-            devotional: "When we place saving faith in Christ, we spiritually die to our old sinful self and are reborn in Him. God begins His work of inner transformation, making us new.",
+            devotional: "This verse underscores the transformative power of faith in Christ. Being 'in Christ' means a complete renewal, where the old life of sin is left behind, and a new life begins. It speaks to the spiritual rebirth that occurs through Christ, promising a fresh start and a new identity. This transformation is a continuous process where God shapes us to reflect His character, assuring us that in Him, we are continually renewed.",
+            prayer: "Lord, thank You for making us new creations in Christ. Help us to leave our old ways behind and embrace the new life You have given us. Guide us in this continuous journey of transformation, that we may reflect Your love and grace. Amen.",
             tag: 21
         ),
-        
         Verse(
             verse: "Deuteronomy 31:6",
             esvTranslation: "Be strong and courageous. Do not fear or be in dread of them, for it is the Lord your God who goes with you. He will not leave you or forsake you.",
             kjvTranslation: "Be strong and of a good courage, fear not, nor be afraid of them: for the Lord thy God, he it is that doth go with thee; he will not fail thee, nor forsake thee.",
-            devotional: "Just as God went before the Israelites, He goes with us to fight our battles. He promises to never abandon us, so we can have bold courage.",
+            devotional: "Deuteronomy 31:6 is a powerful reminder of God's enduring presence and support. It encourages us to face life's challenges with strength and courage, knowing that God is always with us. This promise of God's constant companionship and unwavering support provides reassurance in times of fear and uncertainty. It's an affirmation that we are never alone in our struggles and that God's strength is our ever-present aid.",
+            prayer: "Heavenly Father, give us the strength and courage to face our challenges, knowing You are always with us. Remind us that we are never alone, for You have promised to never leave us nor forsake us. In Your presence, may we find the courage to face any situation. Amen.",
             tag: 22
         ),
-        
         Verse(
             verse: "Psalm 73:25-26",
             esvTranslation: "Whom have I in heaven but you? And there is nothing on earth that I desire besides you. My flesh and my heart may fail, but God is the strength of my heart and my portion forever.",
             kjvTranslation: "Whom have I in heaven but thee? and there is none upon earth that I desire beside thee. My flesh and my heart faileth: but God is the strength of my heart, and my portion for ever.",
-            devotional: "More than anything, the psalmist treasured intimacy with God. Though everything else fades, when God is our delight He gives eternal joy and everlasting strength from within.",
+            devotional: "In these verses, the psalmist expresses a profound longing for God above all else, highlighting the transient nature of earthly desires and the enduring strength found in God. This passage invites us to examine our own hearts and prioritize our relationship with God, acknowledging Him as our greatest treasure. It's a reminder that even when our physical strength and heart may fail, God remains the unchanging strength and eternal portion of our lives, providing all that we need.",
+            prayer: "Lord, help us to desire You above all else. May our hearts find their strength and satisfaction in You alone. In times of weakness and need, remind us that You are our portion forever, our everlasting strength and hope. Amen.",
             tag: 23
         ),
-        
         Verse(
             verse: "Isaiah 26:3-4",
             esvTranslation: "You keep him in perfect peace whose mind is stayed on you, because he trusts in you. Trust in the Lord forever, for the Lord God is an everlasting rock.",
             kjvTranslation: "Thou wilt keep him in perfect peace, whose mind is stayed on thee: because he trusteth in thee. Trust ye in the Lord for ever: for in the Lord Jehovah is everlasting strength:",
-            devotional: "Lasting peace and stability is found in God alone. By continually fixing our minds on Him through prayer and Scripture, we can have confident trust and strength.",
+            devotional: "Isaiah 26:3-4 assures us that steadfast trust in God brings peace. Keeping our minds focused on God, especially in turbulent times, anchors us in His peace. This peace is not just temporary calm but perfect and lasting, grounded in the unchanging nature of God. Trusting in God as our 'everlasting rock' provides stability and strength, affirming that our security lies not in our circumstances, but in our unshakeable God.",
+            prayer: "God of peace, keep our minds steadfastly on You. In a world of unrest, let us find perfect peace in trusting You. You are our everlasting rock, and in You, we find our security and strength. Guide us to rely on You in all things. Amen.",
             tag: 24
         ),
         Verse(
             verse: "Psalm 34:18",
             esvTranslation: "The Lord is near to the brokenhearted and saves the crushed in spirit.",
             kjvTranslation: "The Lord is nigh unto them that are of a broken heart; and saveth such as be of a contrite spirit.",
-            devotional: "We can find comfort in our deepest grief and wounds in the promise that God draws intimately close to heal those with heavy, contrite hearts seeking Him.",
+            devotional: "Psalm 34:18 offers comfort to those in deep emotional pain, assuring us of God's closeness in times of heartache. God's presence is a balm to the wounded soul, bringing healing and salvation to those who are humbly broken. This verse is a tender reminder of God's compassion and care for those who are hurting, inviting us to seek refuge in His comforting embrace in our darkest moments.",
+            prayer: "Lord, in our moments of heartbreak and despair, remind us that You are close. Comfort those who are brokenhearted and save those who are crushed in spirit. Let Your healing presence be a refuge and strength in times of pain. Amen.",
             tag: 25
         ),
-        
         Verse(
             verse: "Matthew 28:19-20",
             esvTranslation: "Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.",
             kjvTranslation: "Go ye therefore, and teach all nations, baptizing them in the name of the Father, and of the Son, and of the Holy Ghost: Teaching them to observe all things whatsoever I have commanded you: and, lo, I am with you always, even unto the end of the world. Amen.",
-            devotional: "As His followers, we are called to the mission of making more disciples by sharing the gospel and training people in His ways wherever we go in life. We never do this alone — Christ promises His powerful presence as we fulfill His Great Commission.",
+            devotional: "Matthew 28:19-20, known as the Great Commission, is a call to action for all believers. We are entrusted with the mission of sharing the gospel and making disciples across the world. This command comes with the promise of Jesus' constant presence, assuring us that we are not alone in this task. It's a reminder of our purpose and responsibility to spread the teachings of Jesus, and the comforting assurance that Christ is with us in every step of this mission.",
+            prayer: "Jesus, empower us to fulfill the Great Commission. Help us to share Your teachings and make disciples in all nations. Thank You for being with us always, guiding and supporting us as we carry out Your mission. Amen.",
             tag: 26
         ),
-        
         Verse(
             verse: "Psalm 103:2-4",
             esvTranslation: "Bless the Lord, O my soul, and forget not all his benefits, who forgives all your iniquity, who heals all your diseases, who redeems your life from the pit, who crowns you with steadfast love and mercy,",
             kjvTranslation: "Bless the Lord, O my soul, and forget not all his benefits: Who forgiveth all thine iniquities; who healeth all thy diseases; Who redeemeth thy life from destruction; who crowneth thee with lovingkindness and tender mercies;",
-            devotional: "David encourages praising God for His mercy and grace which covers our sin, heals our pain, rescues us from death, and adorns us with love. Remembering His goodness helps us worship Him wholeheartedly.",
+            devotional: "Psalm 103:2-4 is a call to remember and praise God for His abundant blessings and mercies. It highlights God's forgiveness, healing, redemption, and loving care. This passage invites us to cultivate a heart of gratitude, recognizing the multitude of ways God works in our lives. It's a reminder to not take His blessings for granted but to continually praise Him for His steadfast love and mercy that enriches and transforms our lives.",
+            prayer: "Lord, we bless Your name and thank You for Your countless benefits. Help us to always remember Your forgiveness, healing, and love. May our souls be filled with gratitude and praise for all that You have done and continue to do in our lives. Amen.",
             tag: 27
         ),
-        
         Verse(
             verse: "Colossians 3:23",
             esvTranslation: "Whatever you do, work heartily, as for the Lord and not for men,",
             kjvTranslation: "And whatsoever ye do, do it heartily, as to the Lord, and not unto men;",
-            devotional: "Our daily work gains eternal value when we see it as serving Jesus with wholehearted devotion, rather than just pleasing human bosses and standards. This brings meaning and joy.",
+            devotional: "Colossians 3:23 teaches us to approach all our work with a spirit of dedication, as if serving Christ Himself. This perspective elevates even mundane tasks to acts of worship and service to the Lord. It encourages us to find purpose and fulfillment in our work, regardless of its nature, by focusing on pleasing God rather than merely seeking the approval of people. This verse transforms our work ethic and attitude, infusing everyday tasks with eternal significance and joy.",
+            prayer: "Lord, help us to work heartily in all we do, as if serving You directly. May our work be a reflection of our service to You, filled with integrity, excellence, and joy. Guide us to find meaning and purpose in our daily tasks, knowing that our labor is ultimately for Your glory. Amen.",
             tag: 28
         ),
-        
         Verse(
             verse: "Romans 12:1",
             esvTranslation: "I appeal to you therefore, brothers, by the mercies of God, to present your bodies as a living sacrifice, holy and acceptable to God, which is your spiritual worship.",
             kjvTranslation: "I beseech you therefore, brethren, by the mercies of God, that ye present your bodies a living sacrifice, holy, acceptable unto God, which is your reasonable service.",
-            devotional: "In thanks to God's great mercy on us through Christ, Paul urges offering our everyday lives back to Him in full devotion and obedience out of worship - doing so is an act of reasonable service.",
+            devotional: "Romans 12:1 calls us to offer ourselves entirely to God as a response to His mercy, embracing a life of holiness and devotion. This act of presenting ourselves as 'living sacrifices' is an ongoing process, involving a daily surrender of our will, desires, and actions to God. It's about living a life that reflects God's holiness and love, transforming our everyday actions into spiritual acts of worship. This verse challenges us to consider how we can serve God with our whole being in every aspect of our lives.",
+            prayer: "Heavenly Father, inspire us to offer our lives as living sacrifices to You. Help us to live in a way that is holy and pleasing in Your sight, turning our everyday actions into acts of worship. Guide us in serving You with our whole heart, mind, and body. Amen.",
             tag: 29
         ),
         Verse(
             verse: "1 Peter 5:7",
             esvTranslation: "Casting all your anxieties on him, because he cares for you.",
             kjvTranslation: "Casting all your care upon him; for he careth for you.",
-            devotional: "Rather than being weighed down by worry, this encourages giving it to God because He actively cares what concerns us. He offers peace and sharing our burdens.",
+            devotional: "1 Peter 5:7 invites us to release our worries and anxieties to God, trusting in His deep care for us. It's a comforting reminder that we don't have to bear the weight of our concerns alone. God is always ready to listen and support us. This verse encourages us to practice trust and reliance on God, letting go of our fears and resting in the assurance of His loving care and provision.",
+            prayer: "Lord, we bring our anxieties and worries to You, trusting in Your care for us. Help us to release our burdens onto You, knowing that You are more than capable of handling them. May we find peace and rest in Your loving arms. Amen.",
             tag: 30
         ),
-        
         Verse(
             verse: "Galatians 5:22-23",
             esvTranslation: "But the fruit of the Spirit is love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, self-control; against such things there is no law.",
             kjvTranslation: "But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith, Meekness, temperance: against such there is no law.",
-            devotional: "The Holy Spirit grows beautiful traits in us called fruits - these qualities demonstrate His active presence as we yield to Him. Our character is transformed to be more like Jesus.",
+            devotional: "Galatians 5:22-23 describes the characteristics that the Holy Spirit develops in believers. These fruits are evidence of His work in our lives, transforming us to resemble Christ. As we yield to the Spirit's leading, He cultivates these qualities in us, enhancing our witness to the world and enriching our personal and communal faith experience. This passage calls us to allow the Spirit to work in and through us, producing characteristics that reflect God's nature.",
+            prayer: "Holy Spirit, cultivate in us the fruit of Your presence. Let love, joy, peace, patience, kindness, goodness, faithfulness, gentleness, and self-control flourish in our lives. May our actions and attitudes reflect Your work in us, drawing others to Your love. Amen.",
             tag: 31
         ),
-        
         Verse(
             verse: "Philippians 4:6-7",
             esvTranslation: "Do not be anxious about anything, but in everything by prayer and supplication with thanksgiving let your requests be made known to God. And the peace of God, which surpasses all understanding, will guard your hearts and your minds in Christ Jesus.",
             kjvTranslation: "Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God. And the peace of God, which passeth all understanding, shall keep your hearts and minds through Christ Jesus.",
-            devotional: "Rather than being worried and afraid, God calls us to come to Him in prayer with thankful hearts, presenting our needs. In return He promises to guard us with a profound peace and presence of mind.",
+            devotional: "Philippians 4:6-7 encourages us to replace anxiety with prayerful trust in God. By bringing our concerns to God with thankfulness, we open our hearts to His peace, which exceeds human understanding and guards our hearts and minds. This peace is not simply the absence of worry, but a profound sense of well-being that comes from trusting in God's sovereignty and care.",
+            prayer: "Father, help us to turn our anxieties into prayers, trusting in Your care and provision. Thank You for the peace that surpasses all understanding, which guards our hearts and minds in Christ Jesus. May we rest in Your unfailing love and care. Amen.",
             tag: 32
         ),
-        
         Verse(
             verse: "Psalm 55:22",
             esvTranslation: "Cast your burden on the Lord, and he will sustain you; he will never permit the righteous to be moved.",
             kjvTranslation: "Cast thy burden upon the Lord, and he shall sustain thee: he shall never suffer the righteous to be moved.",
-            devotional: "When strained under heavy loads in life, we can cast those weights upon the Lord instead of carrying them ourselves. He has strong shoulders able to uphold us so we remain steady.",
+            devotional: "Psalm 55:22 reassures us that when we lay our burdens on God, He will provide the strength and support we need. This verse reminds us of God's faithfulness and His promise to uphold us through life's challenges. It's an invitation to trust in God's sustaining power, confident that He will not let us be overwhelmed. In times of trouble, we can find solace in the knowledge that God is our ever-present helper.",
+            prayer: "Lord, we cast our burdens onto You, knowing that You will sustain us. Thank You for Your promise to support us and keep us steady. In times of difficulty, remind us of Your unending faithfulness and love. Amen.",
             tag: 33
         ),
-        
         Verse(
             verse: "1 John 4:10-11",
             esvTranslation: "In this is love, not that we have loved God but that he loved us and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we also ought to love one another.",
             kjvTranslation: "Herein is love, not that we loved God, but that he loved us, and sent his Son to be the propitiation for our sins. Beloved, if God so loved us, we ought also to love one another.",
-            devotional: "God demonstrated His perfect love by sending Jesus to die for our sins when we were still His enemies. This undeserved grace ought to compel us to also love the undeserving people around us.",
+            devotional: "1 John 4:10-11 highlights the essence of true love – a love that originates from God's initiative in sending Christ for our salvation. This profound love sets the standard for how we should love others. As recipients of such incredible grace, we are called to extend that love to those around us, reflecting the selfless, sacrificial nature of Christ's love in our relationships and interactions. It's a reminder that loving others is not just a suggestion but a response to the love we have received from God.",
+            prayer: "Heavenly Father, thank You for Your amazing love demonstrated through Jesus Christ. Help us to love others as You have loved us. May our lives be a reflection of Your grace and love, touching the lives of those around us. Amen.",
             tag: 34
         ),
         Verse(
             verse: "Romans 5:8",
             esvTranslation: "But God shows his love for us in that while we were still sinners, Christ died for us.",
             kjvTranslation: "But God commendeth his love toward us, in that, while we were yet sinners, Christ died for us.",
-            devotional: "Even in our wretched, sinful state, Christ died for us. This magnifies God's grace, that He would send His Son to die for us when we were ungodly and undeserving—it shows the heights of His love.",
+            devotional: "Romans 5:8 reveals the depth of God's love for us, a love so profound that Christ died for us even in our sinful state. This act of love is a powerful testimony of God's grace, demonstrating that His love is not dependent on our worthiness. It's a reminder of the unconditional nature of God's love and the incredible sacrifice made for our redemption. This verse challenges us to grasp the magnitude of God's love and to live in the light of this profound truth.",
+            prayer: "Lord, we are humbled by Your love, shown through Jesus Christ dying for us while we were still sinners. Help us to fully understand and appreciate this incredible sacrifice. May our lives be transformed by the knowledge of Your unconditional love. Amen.",
             tag: 35
         ),
-        
         Verse(
             verse: "Psalm 27:1",
             esvTranslation: "The Lord is my light and my salvation; whom shall I fear? The Lord is the stronghold of my life; of whom shall I be afraid?",
             kjvTranslation: "The Lord is my light and my salvation; whom shall I fear? the Lord is the strength of my life; of whom shall I be afraid?",
-            devotional: "With God's illumination and deliverance covering us, we have no need to fear anyone. We can be secure and courageous knowing He is our mighty fortress protecting us from all darkened dangers.",
+            devotional: "Psalm 27:1 reassures us of God's protection and guidance in our lives. He is our light in darkness and our salvation in danger. This verse encourages us to live without fear, knowing that God, our mighty fortress, is with us. His presence dispels fear and provides a safe haven in life's storms. As our stronghold, God offers us security and strength, empowering us to face life's challenges with confidence and courage.",
+            prayer: "Heavenly Father, thank You for being our light and salvation. In You, we find the strength to face our fears. Help us to trust in Your protection and guidance, living courageously under Your care. Amen.",
             tag: 36
         ),
-        
         Verse(
             verse: "Isaiah 43:2",
             esvTranslation: "When you pass through the waters, I will be with you; and through the rivers, they shall not overwhelm you; when you walk through fire you shall not be burned, and the flame shall not consume you.",
             kjvTranslation: "When thou passest through the waters, I will be with thee; and through the rivers, they shall not overflow thee: when thou walkest through the fire, thou shalt not be burned; neither shall the flame kindle upon thee.",
-            devotional: "In all of life's trials and tribulations, God promises His personal presence with us to bring comfort, help, and preservation - assuring us of victory through the worst troubles.",
+            devotional: "Isaiah 43:2 is a powerful promise of God's presence in times of trial. Whether we face overwhelming waters or fiery trials, God assures us of His unwavering support. This verse instills a sense of hope and resilience, knowing that God is with us, providing strength and protection. It reminds us that no matter the challenge, we are not alone; God's presence is a constant source of comfort and victory.",
+            prayer: "Lord, in times of trial, remind us that You are with us. Help us to trust in Your protection and strength, knowing that You will guide us through every difficulty. In Your presence, may we find courage and peace. Amen.",
             tag: 37
         ),
-        
         Verse(
             verse: "John 15:5",
             esvTranslation: "I am the vine; you are the branches. Whoever abides in me and I in him, he it is that bears much fruit, for apart from me you can do nothing.",
             kjvTranslation: "I am the vine, ye are the branches: He that abideth in me, and I in him, the same bringeth forth much fruit: for without me ye can do nothing.",
-            devotional: "Jesus illustrates Himself as the vine from whom we branches gain life and nourishment to produce good fruit. Remaining deeply connected to Christ is essential for spiritual growth.",
+            devotional: "John 15:5 highlights our dependence on Christ for spiritual vitality and fruitfulness. As branches connected to the vine, our strength and ability to bear fruit come from Him. This verse calls us to remain in close relationship with Jesus, drawing life and nourishment from Him. It's a reminder that apart from Christ, our efforts are futile, but in Him, we find the resources to grow and thrive spiritually.",
+            prayer: "Jesus, help us to abide in You, drawing our strength and sustenance from Your life. May we bear much fruit as we remain connected to You, using the gifts and opportunities You provide to glorify Your name. Amen.",
             tag: 38
         ),
-        
         Verse(
             verse: "Psalm 28:7",
             esvTranslation: "The Lord is my strength and my shield; in him my heart trusts, and I am helped; my heart exults, and with my song I give thanks to him.",
             kjvTranslation: "The Lord is my strength and my shield; my heart trusted in him, and I am helped: therefore my heart greatly rejoiceth; and with my song will I praise him.",
-            devotional: "God gives us the stability, protection, help and inner joy we need to withstand adversity. Our hearts can fully trust in Him to lead us to ultimate victory with rejoicing.",
+            devotional: "Psalm 28:7 portrays God as our strength and shield, a reliable source of help and protection. Trusting in God fills our hearts with joy and gratitude, leading us to praise Him with songs of thanksgiving. This verse encourages us to rely on God's strength and protection in all circumstances, finding joy and confidence in His faithful assistance.",
+            prayer: "Lord, You are our strength and shield. We trust in Your help and protection. Fill our hearts with joy and thanksgiving, and may our lives sing of Your faithfulness and love. Amen.",
             tag: 39
         ),
-        
         Verse(
             verse: "Joshua 1:8",
             esvTranslation: "This Book of the Law shall not depart from your mouth, but you shall meditate on it day and night, so that you may be careful to do according to all that is written in it. For then you will make your way prosperous, and then you will have good success.",
             kjvTranslation: "This book of the law shall not depart out of thy mouth; but thou shalt meditate therein day and night, that thou mayest observe to do according to all that is written therein: for then thou shalt make thy way prosperous, and then thou shalt have good success.",
-            devotional: "God's Word is vital for directing our lives. As we continually study Scripture and think on it, the Holy Spirit guides us into truth, bears fruit, and grants prosperity.",
+            devotional: "Joshua 1:8 emphasizes the importance of God's Word in guiding our lives. Consistent meditation and application of Scripture lead to prosperous living and success in God's eyes. This verse encourages us to make the Bible a central part of our daily lives, allowing its truths to shape our thoughts, decisions, and actions. It's a call to immerse ourselves in God's Word, finding wisdom and direction for every aspect of life.",
+            prayer: "Heavenly Father, help us to immerse ourselves in Your Word. Guide us to understand and apply its truths in our daily lives. May Your Word be the lamp to our feet and the light to our path, leading us to live in a way that pleases You. Amen.",
             tag: 40
         ),
-        
         Verse(
-            verse: "Matthew 11:29-30 ",
+            verse: "Matthew 11:29-30",
             esvTranslation: "Take my yoke upon you, and learn from me, for I am gentle and lowly in heart, and you will find rest for your souls. For my yoke is easy, and my burden is light.”",
             kjvTranslation: "Take my yoke upon you, and learn of me; for I am meek and lowly in heart: and ye shall find rest unto your souls. For my yoke is easy, and my burden is light.",
-            devotional: "Being joined to Christ provides rest for our souls as He bears our burdens with us. His way of humility and obedience liberates us from fruitless striving to save ourselves.",
+            devotional: "Matthew 11:29-30 invites us to find rest in Christ by aligning ourselves with Him. His yoke, representing His teachings and way of life, is not burdensome but a source of rest and peace. This passage encourages us to learn from Jesus' example of humility and gentleness, finding solace and strength in His presence. It's a reminder that in Christ, our burdens are shared and made lighter.",
+            prayer: "Lord Jesus, help us to take Your yoke upon us and learn from You. May we find rest for our souls in Your gentleness and humility. In Your presence, may our burdens become light and our hearts find peace. Amen.",
             tag: 41
         ),
-        
         Verse(
             verse: "Hebrews 12:1-2",
             esvTranslation: "Therefore, since we are surrounded by so great a cloud of witnesses, let us also lay aside every weight, and sin which clings so closely, and let us run with endurance the race that is set before us, looking to Jesus, the founder and perfecter of our faith, who for the joy that was set before him endured the cross, despising the shame, and is seated at the right hand of the throne of God.",
             kjvTranslation: "Wherefore seeing we also are compassed about with so great a cloud of witnesses, let us lay aside every weight, and the sin which doth so easily beset us, and let us run with patience the race that is set before us, Looking unto Jesus the author and finisher of our faith; who for the joy that was set before him endured the cross, despising the shame, and is set down at the right hand of the throne of God.",
-            devotional: "Encouraged by saints before us, we strip off excess baggage and clingy sins to run after Christ with endurance, fixing our eyes on Him as the ultimate example of sacrificial faith.",
+            devotional: "Hebrews 12:1-2 encourages us to persevere in our faith journey, inspired by those who have gone before us. It calls us to rid ourselves of anything that hinders our spiritual growth and to focus on Jesus, the ultimate example of faith and endurance. By looking to Christ, who triumphed over suffering and is now exalted, we find the motivation and strength to endure challenges and stay true to our faith.",
+            prayer: "Lord, help us to run the race of faith with perseverance, inspired by the examples of faith in Your Word and in our lives. May we fix our eyes on Jesus, drawing strength and inspiration from His example to overcome obstacles and grow in our faith. Amen.",
             tag: 42
         ),
-        
         Verse(
             verse: "Proverbs 16:3",
             esvTranslation: "Commit your work to the Lord, and your plans will be established.",
             kjvTranslation: "Commit thy works unto the Lord, and thy thoughts shall be established.",
-            devotional: "Rather than anxious striving, we are to commit our works and purposes to God, trusting Him to establish them. Laying down our own efforts, He causes our steps to be ordered and built secure.",
+            devotional: "Proverbs 16:3 teaches us the importance of entrusting our endeavors to God. By committing our actions and plans to the Lord, we align ourselves with His will, leading to fruitful and stable outcomes. This verse invites us to place our trust in God for direction and success, emphasizing that when our works are dedicated to Him, our paths become clearer and more secure.",
+            prayer: "Heavenly Father, we commit our works and plans to You. Guide us in Your will, and establish our thoughts and actions according to Your purpose. May our endeavors honor You and align with Your perfect plan. Amen.",
             tag: 43
         ),
         Verse(
             verse: "Isaiah 40:31",
             esvTranslation: "But they who wait for the Lord shall renew their strength; they shall mount up with wings like eagles; they shall run and not be weary; they shall walk and not faint.",
             kjvTranslation: "But they that wait upon the Lord shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint.",
-            devotional: "Waiting on the Lord with hopeful expectation provides renewed energy and vitality. This empowers us to rise above our troubles, pursue our calling, and walk steady without tiring.",
+            devotional: "Isaiah 40:31 offers a beautiful promise of renewal and strength for those who trust and wait on the Lord. This verse reassures us that in God, we find the resilience to overcome challenges and the endurance to continue our journey. It's a metaphor for spiritual vitality – just as eagles soar effortlessly, we too can experience a life of grace and strength when we place our hope in God.",
+            prayer: "Lord, as we wait upon You, renew our strength. Help us to soar like eagles, run without weariness, and walk without fainting. In You, may we find the endurance and resilience for every challenge we face. Amen.",
             tag: 44
         ),
-        
         Verse(
             verse: "Matthew 6:25",
             esvTranslation: "Therefore I tell you, do not be anxious about your life, what you will eat or what you will drink, nor about your body, what you will put on. Is not life more than food, and the body more than clothing?",
             kjvTranslation: "Therefore I say unto you, Take no thought for your life, what ye shall eat, or what ye shall drink; nor yet for your body, what ye shall put on. Is not the life more than meat, and the body than raiment?",
-            devotional: "Jesus commands us not to worry about material needs, promising He will provide for us as we seek His kingdom. With God as our Father, we can trust Him for necessities despite uncertainties.",
+            devotional: "In Matthew 6:25, Jesus instructs us to release our anxieties about material needs, reminding us of the greater value of spiritual life. This verse encourages us to trust in God's provision and care, focusing our hearts and minds on spiritual matters rather than being consumed by worldly concerns. It's a call to a life of faith and trust, where our priorities are aligned with God's kingdom.",
+            prayer: "Heavenly Father, help us to trust in Your provision for our daily needs. Guide us to focus on Your kingdom and righteousness, releasing our anxieties about material concerns. May our lives reflect a trust in You that goes beyond our physical needs. Amen.",
             tag: 45
         ),
         
@@ -373,63 +396,64 @@ struct Verse: Identifiable {
             verse: "Psalm 119:114-115",
             esvTranslation: "You are my hiding place and my shield; I hope in your word. Depart from me, you evildoers, that I may keep the commandments of my God.",
             kjvTranslation: "Thou art my hiding place and my shield: I hope in thy word. Depart from me, ye evildoers: for I will keep the commandments of my God.",
-            devotional: "For safety and security, the psalmist takes refuge in God and His Word while rejecting wicked influences. Staying near the Lord enables obedience despite surrounding evil.",
+            devotional: "In Psalm 119:114-115, the psalmist finds refuge and protection in God and His Word. This passage encourages us to seek God as our sanctuary and to rely on His Word for guidance and strength. It also speaks to the importance of distancing ourselves from negative influences, focusing instead on living in obedience to God's commandments.",
+            prayer: "Lord, be our hiding place and shield in times of trouble. Help us to find hope and guidance in Your word. Give us the strength to turn away from evil and to live according to Your commandments. Amen.",
             tag: 46
         ),
-        
         Verse(
             verse: "Lamentations 3:22-23",
             esvTranslation: "The steadfast love of the Lord never ceases; his mercies never come to an end; they are new every morning; great is your faithfulness.",
             kjvTranslation: "It is of the Lord's mercies that we are not consumed, because his compassions fail not. They are new every morning: great is thy faithfulness.",
-            devotional: "Amid sorrow, we can declare God's eternal lovingkindness which gives us new grace daily. No matter our feelings, His compassion and devotion never changes or fades.",
+            devotional: "Lamentations 3:22-23 reminds us of the unending mercy and faithfulness of God. Even in the darkest times, His love remains constant and His mercies are renewed each day. This passage offers hope and reassurance, affirming that no matter what we face, God's compassion and faithfulness are unwavering.",
+            prayer: "Merciful God, thank You for Your never-ending love and faithfulness. Renew our spirits with Your mercy every morning. In times of sorrow and struggle, help us to remember Your steadfast compassion and faithfulness. Amen.",
             tag: 47
         ),
-        
         Verse(
             verse: "Psalm 63:3",
             esvTranslation: "Because your steadfast love is better than life, my lips will praise you.",
             kjvTranslation: "Because thy lovingkindness is better than life, my lips shall praise thee.",
-            devotional: "Knowing God intimately fills our heart with joy beyond anything on earth. His faithful love lifts our spirits to sing glad praises regardless of circumstances.",
+            devotional: "Psalm 63:3 expresses a profound love and appreciation for God, acknowledging that His love surpasses even life itself. This verse invites us to praise God wholeheartedly, recognizing the incomparable value of His love and presence in our lives.",
+            prayer: "Lord, Your steadfast love is more precious than life itself. Fill our hearts with gratitude and our lips with praise for Your unending love and faithfulness. May we always treasure Your presence above all else. Amen.",
             tag: 48
         ),
-        
         Verse(
             verse: "Matthew 22:37-39",
             esvTranslation: "And he said to him, “You shall love the Lord your God with all your heart and with all your soul and with all your mind. This is the great and first commandment. And a second is like it: You shall love your neighbor as yourself.",
             kjvTranslation: "Jesus said unto him, Thou shalt love the Lord thy God with all thy heart, and with all thy soul, and with all thy mind. This is the first and great commandment. And the second is like unto it, Thou shalt love thy neighbour as thyself.",
-            devotional: "Loving God fully awakens our capacity to love others. His transforming presence softens our hearts to overflow with compassion for people in need around us.",
+            devotional: "Jesus' words in Matthew 22:37-39 highlight the two greatest commandments: loving God with all our being and loving our neighbors as ourselves. These commandments encapsulate the essence of Christian living, calling us to a life of selfless love and devotion to God and others.",
+            prayer: "Heavenly Father, help us to love You with our whole heart, soul, and mind, and to love our neighbors as ourselves. May our lives reflect Your love and compassion, showing Your grace to those around us. Amen.",
             tag: 49
         ),
-        
         Verse(
             verse: "Romans 8:31",
             esvTranslation: "What then shall we say to these things? If God is for us, who can be against us?",
             kjvTranslation: "What shall we then say to these things? If God be for us, who can be against us?",
-            devotional: "With the all-powerful Creator on our side, fully for us, no enemy can oppose or overwhelm His purposes for good in our lives through faith in Christ.",
+            devotional: "Romans 8:31 brings a powerful assurance of God's unwavering support. If God, the Creator of all, is on our side, there is no adversary too great for us. This verse encourages us to face life's challenges with confidence, knowing that God's presence and power are with us.",
+            prayer: "Lord, thank You for being on our side. Help us to remember that with You, we can face any challenge. Strengthen our faith and trust in Your power and presence in our lives. Amen.",
             tag: 50
         ),
-        
         Verse(
             verse: "Psalm 34:4-5",
             esvTranslation: "I sought the Lord, and he answered me and delivered me from all my fears. Those who look to him are radiant, and their faces shall never be ashamed.",
-            kjvTranslation:  "I sought the Lord, and he heard me, and delivered me from all my fears. They looked unto him, and were lightened: and their faces were not ashamed.",
-            devotional: "In deliverance from anxiety, seeking God lights up our faces with hope and joy now, which will continue in eternity without shame as we take refuge in Him.",
+            kjvTranslation: "I sought the Lord, and he heard me, and delivered me from all my fears. They looked unto him, and were lightened: and their faces were not ashamed.",
+            devotional: "Psalm 34:4-5 speaks of the transformative power of seeking God. In His presence, our fears are replaced with His peace, bringing a radiance and confidence that overcomes shame and anxiety. This passage encourages us to turn to God in times of fear, assured of His loving response and deliverance.",
+            prayer: "Heavenly Father, in our fears and anxieties, we turn to You. Deliver us and replace our fears with Your peace. May our faces reflect the radiance of Your love and care, free from shame and full of Your joy. Amen.",
             tag: 51
         ),
-        
         Verse(
             verse: "2 Timothy 1:7",
             esvTranslation: "For God gave us a spirit not of fear but of power and love and self-control.",
             kjvTranslation: "For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.",
-            devotional: "God's indwelling Holy Spirit casts out tormented fear and gives us supernatural love, power, peace and self-discipline to stand strong during trials.",
+            devotional: "2 Timothy 1:7 reminds us that the Spirit God has given us is not one of fear, but of power, love, and self-control. This verse empowers us to live boldly and lovingly, with a disciplined and sound mind, free from the grip of fear.",
+            prayer: "Lord, thank You for the gift of Your Spirit, which empowers us with love, power, and self-control. Help us to live boldly and confidently, free from fear, and grounded in Your love and wisdom. Amen.",
             tag: 52
         ),
-        
         Verse(
-            verse: "Romans 15:13 ",
+            verse: "Romans 15:13",
             esvTranslation: "May the God of hope fill you with all joy and peace in believing, so that by the power of the Holy Spirit you may abound in hope.",
             kjvTranslation: "Now the God of hope fill you with all joy and peace in believing, that ye may abound in hope, through the power of the Holy Ghost.",
-            devotional: "Through believing God's promises, the Holy Spirit floods us with cheerful hope and confidence that overflows to bless others.",
+            devotional: "In Romans 15:13, Paul's blessing invites us to experience the fullness of joy and peace that comes from believing in God. It's a prayer that our lives may be overflowing with hope by the power of the Holy Spirit, anchoring us in God's promises and goodness.",
+            prayer: "God of hope, fill us with the joy and peace that come from believing in You. Let Your Holy Spirit empower us to abound in hope, keeping our hearts anchored in Your promises and love. Amen.",
             tag: 53
         ),
         
