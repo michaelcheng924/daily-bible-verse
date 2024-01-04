@@ -19,6 +19,7 @@ struct ContentView: View {
     @State private var isEsv = true
     @State private var isInfoSheetPresented = false
     @State private var isWebViewPresented = false
+    @State private var isDevotionalPresented = false
 
     init() {
         let calculatedVerseIndex = calculateVerseIndexForCurrentDate()
@@ -108,6 +109,23 @@ struct ContentView: View {
                     
                     if (!isGearIconTapped) {
                         Button(action: {
+                            isDevotionalPresented.toggle()
+                        }) {
+                            Image(systemName: "sun.max")
+                                .font(.title3)
+                                .padding(8)
+                        }
+                        .background(Color.white)
+                        .cornerRadius(30)
+                        .shadow(radius: 3)
+                        .sheet(isPresented: $isDevotionalPresented) {
+                            DevotionalView(isPresented: $isDevotionalPresented, devotional: verses[verseIndex].devotional, prayer: verses[verseIndex].prayer) {
+                                // This closure will be called when the "Close" button is tapped
+                                isDevotionalPresented = false // Dismiss the sheet
+                            }
+                        }
+                        
+                        Button(action: {
                             isWebViewPresented.toggle()
                         }) {
                             Image(systemName: "book")
@@ -118,8 +136,8 @@ struct ContentView: View {
                         .cornerRadius(30)
                         .shadow(radius: 3)
                         .sheet(isPresented: $isWebViewPresented) {
-                            var verse = verses[verseIndex].verse
-                            var parts = verse.split(separator: ":")
+                            let verse = verses[verseIndex].verse
+                            let parts = verse.split(separator: ":")
                             
                             if let firstPart = parts.first {
                                 let trimmedText = String(firstPart)
@@ -227,7 +245,6 @@ struct ContentView: View {
                             }
                             .font(.title3)
                             .padding(8)
-                            .bold()
                         }
                         .background(Color.white)
                         .cornerRadius(30)
